@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Grifter";
+    src: url("fonts/grifter_bold-webfont.woff2") format("woff2"),
+      url("fonts/grifter_bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-grifter;
+  }
+
+  h1 {
+    @apply text-[calc(1vw+10rem)];
+  }
+}

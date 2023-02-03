@@ -3,6 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { Image } from '@astrojs/image/components';
+import ryan from '../../public/ryan.jpg';
 ---
 
 <!DOCTYPE html>
@@ -11,10 +13,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header title={SITE_TITLE} />
 		<main>
-			<div class="bg-black">
-				<h1>Ryan Miller</h1>
+			<div class="bg-black text-white relative min-h-screen flex items-center">
+					<div class="container relative z-10">
+						<h1 class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Ryan Miller</h1>
+					</div>
+					<div class="absolute bottom-0 right-0">
+						<Image src={ryan} alt="Ryan Miller Headshot" width={500} height={750} />
+					</div>
 			</div>
 			<p>
 				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
