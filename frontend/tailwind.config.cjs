@@ -10,7 +10,8 @@ module.exports = {
         padding: "1rem",
       },
       fontFamily: {
-        grifter: ["Grifter", ...defaultTheme.fontFamily.sans],
+        grifter: ["Grifter", "Helvetica", ...defaultTheme.fontFamily.sans],
+        sans: ["InterVariable", "Inter", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         lightBlue: "#36BCD1",
