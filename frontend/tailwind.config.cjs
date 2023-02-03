@@ -12,7 +12,15 @@ module.exports = {
       fontFamily: {
         grifter: ["Grifter", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        lightBlue: "#36BCD1",
+        darkBlue: "#4172D1",
+        green: "#2CD18B",
+        pink: "#D14B8C",
+        rust: "#D1604B",
+      },
     },
   },
+  extend: {},
   plugins: [],
 }
