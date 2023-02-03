@@ -20,8 +20,21 @@ module.exports = {
         pink: "#D14B8C",
         rust: "#D1604B",
       },
+      keyframes: {
+        rotateY: {
+          "0%": { transform: "translateY(100%)", opacity: 0 },
+          "10%": { transform: "translateY(0%)", opacity: 1 },
+          "20%": { transform: "translateY(0%)", opacity: 1 },
+          "25%": { transform: "translateY(-50%)", opacity: 0 },
+          "30%": { transform: "translateY(-100%)", opacity: 0 },
+          "100%": { transform: "translateY(-100%)", opacity: 0 },
+        },
+      },
+      animation: {
+        rotateY: "rotateY 10s ease-in-out infinite",
+      },
     },
   },
   extend: {},
-  plugins: [],
+  plugins: [require("tailwindcss-animation-delay")],
 }
