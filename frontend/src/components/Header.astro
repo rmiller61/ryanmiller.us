@@ -4,12 +4,11 @@ import { SITE_TITLE } from '../consts';
 import Socials from './Socials';
 ---
 
-<header class="sticky px-8 top-0 h-[75px] flex justify-between mb-0 items-center bg-black text-white border-t border-t-white/75">
+<header class="z-[100] sticky px-8 top-0 h-[75px] flex justify-between mb-0 items-center bg-black text-white border-t border-t-white/75">
 	<h5 class="mb-0">
 		{SITE_TITLE}
 	</h5>
 	<nav class="space-x-4 uppercase">
-		<HeaderLink href="#">Home</HeaderLink>
 		<HeaderLink href="#">Skills</HeaderLink>
 		<HeaderLink href="#">Writing</HeaderLink>
 		<HeaderLink href="#">Projects</HeaderLink>
@@ -20,11 +19,3 @@ import Socials from './Socials';
 	</nav>
 	<Socials client:load />
 </header>
-<style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
-</style>

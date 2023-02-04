@@ -33,6 +33,9 @@ module.exports = {
       animation: {
         rotateY: "rotateY 10s ease-in-out infinite",
       },
+      boxShadow: {
+        tile: "-2px 2px 0 0 rgba(122, 122, 122, 1), -4px 4px 0 0 rgba(122, 122, 122, 1), -6px 6px 0 0 rgba(122, 122, 122, 1), -8px 8px 0 0 rgba(122, 122, 122, 1), -50px 50px 120px 20px rgba(0, 0, 0, 0.5)",
+      },
     },
   },
   extend: {},
