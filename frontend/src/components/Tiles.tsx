@@ -94,6 +94,9 @@ import netlify from "../assets/netlify.svg"
 import vercel from "../assets/vercel.svg"
 import heroku from "../assets/heroku.svg"
 import wpEngine from "../assets/wp-engine.svg"
+import framer from "../assets/framer.svg"
+import babel from "../assets/babel.svg"
+import swc from "../assets/swc.svg"
 
 type Skills = Record<
   string,
@@ -155,10 +158,6 @@ const SKILLS: Skills = {
       image: axios,
     },
     {
-      name: "GSAP",
-      image: gsap,
-    },
-    {
       name: "TRPC",
       image: trpc,
     },
@@ -205,10 +204,6 @@ const SKILLS: Skills = {
     {
       name: "Qwik",
       image: qwik,
-    },
-    {
-      name: "Three.js",
-      image: threejs,
     },
     {
       name: "Svelte",
@@ -461,6 +456,24 @@ const SKILLS: Skills = {
   ],
   devtools: [
     {
+      name: "SWC",
+      image: swc,
+    },
+    {
+      name: "Babel",
+      image: babel,
+    },
+    {
+      name: "ESLint",
+      image: eslint,
+    },
+    {
+      name: "Prettier",
+      image: prettier,
+    },
+  ],
+  buildTools: [
+    {
       name: "Vite",
       image: vite,
     },
@@ -476,13 +489,19 @@ const SKILLS: Skills = {
       name: "Webpack",
       image: webpack,
     },
+  ],
+  animation: [
     {
-      name: "ESLint",
-      image: eslint,
+      name: "Framer Motion",
+      image: framer,
     },
     {
-      name: "Prettier",
-      image: prettier,
+      name: "GSAP",
+      image: gsap,
+    },
+    {
+      name: "Three.js",
+      image: threejs,
     },
   ],
   social: [
@@ -528,13 +547,17 @@ const SKILLS: Skills = {
 }
 
 export default function Tiles() {
+  {
+    /**scale-y-50 -translate-x-1/4 */
+  }
   return (
     <div className="scale-y-50">
-      <ul className="-rotate-45 container">
+      {/**-rotate-45  */}
+      <ul className="w-[70vw] mx-auto grid grid-cols-4 gap-10 -rotate-45">
         {Object.entries(SKILLS).map(([key, values]) => (
           <li
             key={key}
-            className="float-left w-[23.333333333%] bg-white m-[1.5%] relative rounded-[10px] overflow-hidden shadow-tile text-center pb-[23.333333333%]"
+            className="bg-white relative rounded-[10px] overflow-hidden shadow-tile text-center pb-[100%]"
           >
             <div className="absolute inset-5">
               <img
