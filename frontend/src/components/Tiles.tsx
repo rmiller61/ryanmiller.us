@@ -530,7 +530,7 @@ const SKILLS: Skills = {
 export default function Tiles() {
   return (
     <div className="scale-y-50">
-      <ul className="w-[700px] -rotate-45 mx-auto">
+      <ul className="-rotate-45 container">
         {Object.entries(SKILLS).map(([key, values]) => (
           <li
             key={key}
