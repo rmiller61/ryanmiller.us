@@ -426,10 +426,6 @@ export const SKILLS: Skills = {
       image: ec2,
     },
     {
-      name: "AWS Elastic Load Balancer",
-      image: elb,
-    },
-    {
       name: "AWS Route 53",
       image: route53,
     },
