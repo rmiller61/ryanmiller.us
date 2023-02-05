@@ -212,10 +212,6 @@ export const SKILLS: Skills = {
       image: tailwind,
     },
     {
-      name: "Styled Components",
-      image: styledComponents,
-    },
-    {
       name: "Vanilla Extract",
       image: vanillaExtract,
     },

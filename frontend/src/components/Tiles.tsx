@@ -20,31 +20,33 @@ const tileVariants = {
     y: 100,
     z: 0,
     opacity: 0,
-    boxShadow:
-      "-2px 2px 0 0 rgba(122, 122, 122, 1), -4px 4px 0 0 rgba(122, 122, 122, 1), -6px 6px 0 0 rgba(122, 122, 122, 1), -8px 8px 0 0 rgba(122, 122, 122, 1), -10px 10px 2px 2px rgba(0, 0, 0, 0.2)",
+    //boxShadow: "-2px 2px 0 0 rgba(122, 122, 122, 1), -4px 4px 0 0 rgba(122, 122, 122, 1), -6px 6px 0 0 rgba(122, 122, 122, 1), -8px 8px 0 0 rgba(122, 122, 122, 1), -10px 10px 2px 2px rgba(0, 0, 0, 0.2)",
   },
   animate: {
     x: 0,
     y: 0,
     z: 0,
     opacity: 1,
-    boxShadow:
-      "-2px 2px 0 0 rgba(122, 122, 122, 1), -4px 4px 0 0 rgba(122, 122, 122, 1), -6px 6px 0 0 rgba(122, 122, 122, 1), -8px 8px 0 0 rgba(122, 122, 122, 1), -50px 50px 120px 20px rgba(0, 0, 0, 0.5)",
+    //boxShadow: "-2px 2px 0 0 rgba(122, 122, 122, 1), -4px 4px 0 0 rgba(122, 122, 122, 1), -6px 6px 0 0 rgba(122, 122, 122, 1), -8px 8px 0 0 rgba(122, 122, 122, 1), -50px 50px 120px 20px rgba(0, 0, 0, 0.5)",
   },
 }
 
-const cycleLength = 30000 // 30 seconds
+const interval = 3000 // 1 second
+
+//const baseProbability = 1 / 20
 
 const Tile = ({ tiles, zIndex }: TileProps) => {
   const [index, setIndex] = useState(0)
   const activeTile = tiles[index]
   const tilesLength = tiles.length
-  const interval = cycleLength / tilesLength
+  //const interval = cycleLength / tilesLength
   const increment = useCallback(() => {
-    setIndex((index) => wrap(index + 1, 0, tilesLength - 1))
+    const random = randomNumber(0, 30)
+    const probability = tilesLength
+    if (random < probability) setIndex((index) => wrap(index + 1, 0, tilesLength - 1))
   }, [tilesLength])
 
-  //useInterval(increment, interval)
+  useInterval(increment, interval)
 
   return (
     <li
@@ -57,7 +59,7 @@ const Tile = ({ tiles, zIndex }: TileProps) => {
         <motion.div
           layout
           key={index}
-          className="bg-white absolute inset-0 rounded-[10px] overflow-hidden shadow-tile text-center p-5"
+          className="absolute inset-0"
           variants={tileVariants}
           initial="initial"
           animate="animate"
@@ -68,12 +70,15 @@ const Tile = ({ tiles, zIndex }: TileProps) => {
             opacity: { duration: 0.5 },
           }}
         >
-          <img
-            src={activeTile.image}
-            alt={activeTile.name}
-            title={activeTile.name}
-            className="object-contain object-center h-full w-full"
-          />
+          <div className="bg-white absolute inset-0 rounded-[10px] overflow-hidden text-center p-5 shadow-tile z-10">
+            <img
+              src={activeTile.image}
+              alt={activeTile.name}
+              title={activeTile.name}
+              className="object-contain object-center h-full w-full"
+            />
+          </div>
+          <div className="absolute -inset-5 translate-x-[-50px] translate-y-[50px] bg-black/50 z-[-1] blur-3xl" />
         </motion.div>
       </AnimatePresence>
     </li>
