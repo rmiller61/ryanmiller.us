@@ -47,7 +47,8 @@ module.exports = {
         rotateY: "rotateY 10s ease-in-out infinite",
       },
       boxShadow: {
-        tile: "-2px 2px 0 0 rgba(122, 122, 122, 1), -4px 4px 0 0 rgba(122, 122, 122, 1), -6px 6px 0 0 rgba(122, 122, 122, 1), -8px 8px 0 0 rgba(122, 122, 122, 1), -50px 50px 120px 20px rgba(0, 0, 0, 0.5)",
+        //tile: "-2px 2px 0 0 rgba(122, 122, 122, 1), -4px 4px 0 0 rgba(122, 122, 122, 1), -6px 6px 0 0 rgba(122, 122, 122, 1), -8px 8px 0 0 rgba(122, 122, 122, 1), -50px 50px 120px 20px rgba(0, 0, 0, 0.5)",
+        tile: "-2px 2px 0 0 rgba(122, 122, 122, 1), -4px 4px 0 0 rgba(122, 122, 122, 1), -6px 6px 0 0 rgba(122, 122, 122, 1), -8px 8px 0 0 rgba(122, 122, 122, 1)",
         bookLeft: "inset 4px -4px 4px 1px #635648, inset 7px -7px 4px 0 #221b14",
         bookRight: "inset -4px -4px 4px 1px #635648, inset -7px -7px 4px 0 #221b14",
         pageLeft: "inset 0 0 26px 2px #d8cccc, -1px 1px 13px 0 rgba(34, 27, 20, 0.81)",

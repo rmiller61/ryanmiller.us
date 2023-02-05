@@ -34,10 +34,13 @@ import Book from '../components/Book.astro';
 					</!--div-->
 			</div>
 			<Header />
-			<section class="overflow-hidden">
-				<Tiles client:idle />
+			<section class="overflow-hidden py-20">
+				<div class="relative pt-[calc(2vw+12rem)]">
+					<h2 class="absolute text-center left-0 top-0 w-full">The <span class="text-rust">Skills</span><br/>That Pay the <span class="text-green">Bills</span></h2>
+					<Tiles client:idle />
+				</div>
 			</section>
-			<section class="min-h-screen">
+			<section>
 				<Book />
 			</section>
 		</main>
