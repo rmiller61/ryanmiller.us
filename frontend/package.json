@@ -31,6 +31,7 @@
     "tailwindcss-animation-delay": "^1.0.7"
   },
   "devDependencies": {
+    "@kamona/tailwindcss-perspective": "^0.1.1",
     "@tailwindcss/line-clamp": "^0.4.2"
   }
 }

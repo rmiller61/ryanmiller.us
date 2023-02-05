@@ -8,6 +8,7 @@ specifiers:
   '@astrojs/sitemap': ^1.0.1
   '@astrojs/tailwind': ^3.0.1
   '@fontsource/inter': ^4.5.15
+  '@kamona/tailwindcss-perspective': ^0.1.1
   '@tailwindcss/line-clamp': ^0.4.2
   '@types/react': ^18.0.21
   '@types/react-dom': ^18.0.6
@@ -42,6 +43,7 @@ dependencies:
   tailwindcss-animation-delay: 1.0.7_tailwindcss@3.2.4
 
 devDependencies:
+  '@kamona/tailwindcss-perspective': 0.1.1_tailwindcss@3.2.4
   '@tailwindcss/line-clamp': 0.4.2_tailwindcss@3.2.4
 
 packages:
@@ -736,6 +738,14 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: false
+
+  /@kamona/tailwindcss-perspective/0.1.1_tailwindcss@3.2.4:
+    resolution: {integrity: sha512-ayC/wnfR1EYBIc3ShDKp8oYfZTPPo1aRcEuMVI+BcoUz28bsxtEpiakS0Gc6vvXi9LjKuJillJYShMl+qGldEw==}
+    peerDependencies:
+      tailwindcss: '>=2.2.0'
+    dependencies:
+      tailwindcss: 3.2.4
+    dev: true
 
   /@ljharb/has-package-exports-patterns/0.0.2:
     resolution: {integrity: sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==}
