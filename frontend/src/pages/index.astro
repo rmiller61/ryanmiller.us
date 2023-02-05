@@ -6,6 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { Image } from '@astrojs/image/components';
 import ryan from '../../public/ryan.webp';
 import Tiles from '../components/Tiles';
+import Book from '../components/Book.astro';
 ---
 
 <!DOCTYPE html>
@@ -36,7 +37,9 @@ import Tiles from '../components/Tiles';
 			<section class="overflow-hidden">
 				<Tiles client:idle />
 			</section>
-			<section class="min-h-screen"></section>
+			<section class="min-h-screen">
+				<Book />
+			</section>
 		</main>
 		<Footer />
 	</body>
