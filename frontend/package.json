@@ -29,5 +29,8 @@
     "sharp": "^0.31.3",
     "tailwindcss": "^3.0.24",
     "tailwindcss-animation-delay": "^1.0.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.2"
   }
 }
