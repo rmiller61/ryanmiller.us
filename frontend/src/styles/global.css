@@ -12,6 +12,10 @@
     font-display: swap;
   }
 
+  p {
+    @apply mb-6;
+  }
+
   h1,
   h2,
   h3,
