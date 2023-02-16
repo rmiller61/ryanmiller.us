@@ -23,5 +23,6 @@ export default defineConfig({
     }),
     react(),
   ],
-  vite: { ssr: { noExternal: ["react-use", "react-icons"] } },
+  vite: import.meta.env.DEV === true ? {} : { ssr: { noExternal: ["react-use", "react-icons"] } },
+  //vite: { ssr: { noExternal: ["react-use", "react-icons"] } },
 })
