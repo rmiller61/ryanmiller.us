@@ -10,7 +10,7 @@ import Book from "../components/Book.astro"
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
@@ -59,8 +59,11 @@ import Book from "../components/Book.astro"
 				</div>
 			</section-->
     <main class="overflow-hidden">
-      <Tiles client:idle />
-      <section class="flex flex-wrap flex-row justify-center">
+		<section id="skills" class="pt-32">
+			<h2 class="text-center mb-[-10%]">The <span class="text-rust">Skills</span><br/>That Pay the <span class="text-green">Bills</span></h2>
+			<Tiles client:idle />
+		</section>
+      <section id="writing" class="flex flex-wrap flex-row justify-center">
         <div class="container text-center relative z-10">
           <h2>Writing</h2>
           <h4>Short Stories</h4>
