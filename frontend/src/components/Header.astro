@@ -1,21 +1,23 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
-import Socials from './Socials.astro';
+import HeaderLink from "./HeaderLink.astro"
+import { SITE_TITLE } from "../consts"
+import Socials from "./Socials.astro"
 ---
 
-<header class="z-[100] sticky px-8 top-0 h-[75px] flex justify-between mb-0 items-center bg-black text-white border-t border-t-white/75">
-	<h5 class="mb-0">
-		{SITE_TITLE}
-	</h5>
-	<nav class="space-x-4 uppercase">
-		<HeaderLink href="#">Skills</HeaderLink>
-		<HeaderLink href="#">Writing</HeaderLink>
-		<HeaderLink href="#">Projects</HeaderLink>
-		<HeaderLink href="#">Resume</HeaderLink>
-		<HeaderLink href="#">Contact</HeaderLink>
-		<!--HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</-HeaderLink>
+<header
+  class="z-[100] sticky px-8 top-0 h-[75px] flex justify-between mb-0 items-center bg-black text-white border-t border-t-white/75"
+>
+  <h5 class="mb-0">
+    {SITE_TITLE}
+  </h5>
+  <nav class="space-x-4 uppercase">
+    <HeaderLink href="#">Skills</HeaderLink>
+    <HeaderLink href="#">Writing</HeaderLink>
+    <HeaderLink href="#">Projects</HeaderLink>
+    <HeaderLink href="#">Resume</HeaderLink>
+    <HeaderLink href="#">Contact</HeaderLink>
+    <!--HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</-HeaderLink>
 		<HeaderLink-- href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink-->
-	</nav>
-	<Socials />
+  </nav>
+  <Socials />
 </header>

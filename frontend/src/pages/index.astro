@@ -1,61 +1,88 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import { Image } from '@astrojs/image/components';
-import ryan from '../../public/ryan.webp';
-import Tiles from '../components/Tiles';
-import Book from '../components/Book.astro';
+import BaseHead from "../components/BaseHead.astro"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts"
+import { Image } from "@astrojs/image/components"
+import ryan from "../../public/ryan.webp"
+import Tiles from "../components/Tiles"
+import Book from "../components/Book.astro"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<main>
-			<div class="from-[#0c0c0c] to-black bg-gradient-to-b text-white relative min-h-[calc(100vh-75px)] flex items-center">
-					<div class="container relative z-10">
-						<h1 class="text-transparent bg-clip-text bg-gradient-to-r from-lightBlue to-green">Ryan Miller</h1>
-						<h3>
-							<span class="relative flex pb-[1.25em]">
-								<span class="animate-rotateY opacity-0 whitespace-nowrap inline-block absolute top-0 left-0">Web Developer</span>
-								<span class="animate-rotateY opacity-0 whitespace-nowrap inline-block absolute top-0 left-0 animation-delay-2000">Creative Writer</span>
-								<span class="animate-rotateY opacity-0 whitespace-nowrap inline-block absolute top-0 left-0 animation-delay-4000">UX Designer</span>
-								<span class="animate-rotateY opacity-0 whitespace-nowrap inline-block absolute top-0 left-0 animation-delay-6000">Software Engineer</span>
-								<span class="animate-rotateY opacity-0 whitespace-nowrap inline-block absolute top-0 left-0 animation-delay-8000">Problem Solver</span>	
-							</span>
-						</h3>
-					</div>
-					<!--div class="absolute bottom-0 right-0 h-full pointer-events-none">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <div
+      class="from-[#0c0c0c] to-black bg-gradient-to-b text-white relative min-h-[calc(100vh-75px)] flex items-center"
+    >
+      <div class="container relative z-10">
+        <h1 class="text-transparent bg-clip-text bg-gradient-to-r from-lightBlue to-green">
+          Ryan Miller
+        </h1>
+        <h3>
+          <span class="relative flex pb-[1.25em]">
+            <span
+              class="animate-rotateY opacity-0 whitespace-nowrap inline-block absolute top-0 left-0"
+              >Web Developer</span
+            >
+            <span
+              class="animate-rotateY opacity-0 whitespace-nowrap inline-block absolute top-0 left-0 animation-delay-2000"
+              >Creative Writer</span
+            >
+            <span
+              class="animate-rotateY opacity-0 whitespace-nowrap inline-block absolute top-0 left-0 animation-delay-4000"
+              >UX Designer</span
+            >
+            <span
+              class="animate-rotateY opacity-0 whitespace-nowrap inline-block absolute top-0 left-0 animation-delay-6000"
+              >Software Engineer</span
+            >
+            <span
+              class="animate-rotateY opacity-0 whitespace-nowrap inline-block absolute top-0 left-0 animation-delay-8000"
+              >Problem Solver</span
+            >
+          </span>
+        </h3>
+      </div>
+      <!--div class="absolute bottom-0 right-0 h-full pointer-events-none">
 						<Image src={ryan} alt="Ryan Miller Headshot" width={936} height={1401} class={`object-contain object-right-bottom h-full w-full`} />
 					</!--div-->
-			</div>
-			<Header />
-			<section class="overflow-hidden py-20">
+    </div>
+    <Header />
+    <!--section class="overflow-hidden py-20">
 				<div class="relative sm:pt-[calc(2vw+12rem)]">
 					<h2 class="sm:absolute text-center left-0 top-0 w-full">The <span class="text-rust">Skills</span><br/>That Pay the <span class="text-green">Bills</span></h2>
-					<Tiles client:idle />
+					
 				</div>
-			</section>
-			<section class="flex flex-wrap flex-row justify-center">
-				<div class="container text-center relative z-10">
-					<h2>Writing</h2>
-					<h4>Short Stories</h4>
-					<ul class="flex justify-center mb-10">
-						<li class="inline-block after:content-['/'] after:mx-2">All That Remains</li>
-						<li class="inline-block after:content-['/'] after:mx-2">The Grand Re-Opening</li>
-						<li class="inline-block">The Last Fish</li>
-					</ul>
-					<h4><em>The Wolf In Fetters</em></h4>
-					<p class="max-w-[700px] mx-auto">Read the first chapter of my debut novel, <em>The Wolf in Fetters</em>, a gripping and emotional sci-fi thriller for which I am currently seeking representation!</p>
-					<a href="#" class="px-5 py-3 bg-rust font-bold text-sm text-white uppercase tracking-wider">Read Chapter One</a>
-				</div>
-				<Book />
-			</section>
-		</main>
-		<Footer />
-	</body>
+			</section-->
+    <main class="overflow-hidden">
+      <Tiles client:idle />
+      <section class="flex flex-wrap flex-row justify-center">
+        <div class="container text-center relative z-10">
+          <h2>Writing</h2>
+          <h4>Short Stories</h4>
+          <ul class="flex justify-center mb-10">
+            <li class="inline-block after:content-['/'] after:mx-2">All That Remains</li>
+            <li class="inline-block after:content-['/'] after:mx-2">The Grand Re-Opening</li>
+            <li class="inline-block">The Last Fish</li>
+          </ul>
+          <h4><em>The Wolf In Fetters</em></h4>
+          <p class="max-w-[700px] mx-auto">
+            Read the first chapter of my debut novel, <em>The Wolf in Fetters</em>, a gripping and
+            emotional sci-fi thriller for which I am currently seeking representation!
+          </p>
+          <a
+            href="#"
+            class="px-5 py-3 bg-rust font-bold text-sm text-white uppercase tracking-wider"
+            >Read Chapter One</a
+          >
+        </div>
+        <Book />
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>
