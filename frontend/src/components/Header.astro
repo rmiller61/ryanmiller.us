@@ -1,7 +1,7 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
-import Socials from './Socials';
+import Socials from './Socials.astro';
 ---
 
 <header class="z-[100] sticky px-8 top-0 h-[75px] flex justify-between mb-0 items-center bg-black text-white border-t border-t-white/75">
@@ -17,5 +17,5 @@ import Socials from './Socials';
 		<!--HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</-HeaderLink>
 		<HeaderLink-- href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink-->
 	</nav>
-	<Socials client:load />
+	<Socials />
 </header>
