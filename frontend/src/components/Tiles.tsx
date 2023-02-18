@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react"
 import type { SingleTile } from "../types"
-import { SKILLS } from "../consts"
+import { SKILLS } from "../constants"
 import { isEven, randomNumber, wrap, interpolate } from "../utils/numbers"
 import { useInterval } from "react-use"
 import { motion, AnimatePresence } from "framer-motion"
