@@ -7,15 +7,10 @@ import {
   useMotionValue,
   useVelocity,
   useAnimationFrame,
+  useMotionValueEvent,
 } from "framer-motion"
 import { wrap } from "../utils/numbers"
-import { PROJECTS } from "../constants"
 import type { Project } from "../types"
-
-const projectsLength = PROJECTS.length
-
-const PROJECTS1 = PROJECTS.slice(0, projectsLength / 2)
-const PROJECTS2 = PROJECTS.slice(projectsLength / 2, projectsLength)
 
 const Project = ({ name, media }: Project) => {
   return (
@@ -37,9 +32,10 @@ const Project = ({ name, media }: Project) => {
 
 interface Props {
   baseVelocity: number
+  items: Project[]
 }
 
-export default function Projects({ baseVelocity }: Props) {
+export default function Projects({ baseVelocity, items }: Props) {
   const baseX = useMotionValue(0)
   const { scrollY } = useScroll()
   const scrollVelocity = useVelocity(scrollY)
@@ -77,23 +73,15 @@ export default function Projects({ baseVelocity }: Props) {
     baseX.set(baseX.get() + moveBy)
   })
 
-  /**
-   * The number of times to repeat the child text should be dynamically calculated
-   * based on the size of the text and viewport. Likewise, the x motion value is
-   * currently wrapped between -20 and -45% - this 25% is derived from the fact
-   * we have four children (100% / 4). This would also want deriving from the
-   * dynamically generated number of children.
-   */
-
   return (
-    <div className="overflow-hidden flex flex-nowrap">
+    <div className="overflow-hidden flex flex-nowrap pointer-events-none select-none">
       <motion.div
         className="grid grid-flow-col auto-cols-[1fr]"
         style={{
           x,
         }}
       >
-        {[...PROJECTS1, ...PROJECTS1].map((project, index) => (
+        {[...items, ...items].map((project, index) => (
           <Project key={`${project.name}-${index}`} {...project} />
         ))}
       </motion.div>

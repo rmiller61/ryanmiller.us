@@ -26,6 +26,7 @@ module.exports = {
         sans: ["InterVariable", "Inter", ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        dark: "#0c0c0c",
         lightBlue: "#36BCD1",
         darkBlue: "#4172D1",
         green: "#2CD18B",

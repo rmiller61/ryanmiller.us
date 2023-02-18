@@ -17,8 +17,9 @@ import sep from "../assets/projects/sep.jpg?url"
 import socialHustle from "../assets/projects/social-hustle.jpg?url"
 import stayAwhile from "../assets/projects/stay-awhile.jpg?url"
 import tm34 from "../assets/projects/tm34.webp?url"
+import { shuffleArray } from "../utils/arrays"
 
-export const PROJECTS: Array<Project> = [
+export const PROJECTS: Array<Project> = shuffleArray([
   {
     name: "Air Locker Training",
     media: {
@@ -161,4 +162,4 @@ export const PROJECTS: Array<Project> = [
       image: tm34,
     },
   },
-]
+])
