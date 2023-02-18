@@ -9,6 +9,7 @@ import Tiles from "../components/Tiles"
 import Book from "../components/Book.astro"
 import Projects from "../components/Projects"
 import { PROJECTS } from "../constants"
+import Resume from "../components/Resume.astro"
 ---
 
 <!DOCTYPE html>
@@ -49,9 +50,6 @@ import { PROJECTS } from "../constants"
           </span>
         </h3>
       </div>
-      <!--div class="absolute bottom-0 right-0 h-full pointer-events-none">
-						<Image src={ryan} alt="Ryan Miller Headshot" width={936} height={1401} class={`object-contain object-right-bottom h-full w-full`} />
-					</!--div-->
     </div>
     <Header />
     <!--section class="overflow-hidden py-20">
@@ -60,8 +58,8 @@ import { PROJECTS } from "../constants"
 					
 				</div>
 			</section-->
-    <main class="overflow-hidden">
-		<section id="skills" class="pt-32">
+    <main>
+		<section id="skills" class="pt-32 overflow-hidden">
 			<h2 class="text-center mb-[-10%]">The <span class="text-rust">Skills</span><br/>That Pay the <span class="text-green">Bills</span></h2>
 			<Tiles client:idle />
 		</section>
@@ -88,9 +86,10 @@ import { PROJECTS } from "../constants"
         <Book />
       </section>
       <section id="projects" class="bg-dark">
-        <Projects baseVelocity={2.5} client:idle items={PROJECTS.slice(0, PROJECTS.length / 2)} />
-        <Projects baseVelocity={-2.5} client:idle items={PROJECTS.slice(PROJECTS.length / 2, PROJECTS.length)} />
+        <Projects baseVelocity={2} client:idle items={PROJECTS.slice(0, PROJECTS.length / 2)} />
+        <Projects baseVelocity={-2} client:idle items={PROJECTS.slice(PROJECTS.length / 2, PROJECTS.length)} />
       </section>
+      <Resume />
     </main>
     <Footer />
   </body>
