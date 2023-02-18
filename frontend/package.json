@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@kamona/tailwindcss-perspective": "^0.1.1",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/line-clamp": "^0.4.2",
     "prettier": "^2.8.4",
     "prettier-plugin-astro": "^0.8.0"

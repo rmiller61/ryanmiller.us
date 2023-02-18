@@ -71,10 +71,14 @@ module.exports = {
     },
   },
   extend: {},
+  corePlugins: {
+    aspectRatio: false,
+  },
   plugins: [
     require("tailwindcss-animation-delay"),
     require("@kamona/tailwindcss-perspective"),
     require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/aspect-ratio"),
     plugin(function ({ config, addUtilities, addBase, theme, e, matchUtilities }) {
       addBase({
         "*, ::before, ::after": {
