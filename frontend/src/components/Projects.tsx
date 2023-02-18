@@ -14,7 +14,7 @@ import type { Project } from "../types"
 
 const Project = ({ name, media }: Project) => {
   return (
-    <div className="w-[20vw]">
+    <div className="w-[50vw] md:w-[30vw] lg:w-[25vw] xl:w-[20vw]">
       <div className="aspect-w-4 aspect-h-3">
         {media.type === "IMAGE" ? (
           <img src={media.image} alt={name} />
