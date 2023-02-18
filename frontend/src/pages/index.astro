@@ -7,6 +7,7 @@ import { Image } from "@astrojs/image/components"
 import ryan from "../../public/ryan.webp"
 import Tiles from "../components/Tiles"
 import Book from "../components/Book.astro"
+import Projects from "../components/Projects"
 ---
 
 <!DOCTYPE html>
@@ -84,6 +85,9 @@ import Book from "../components/Book.astro"
           >
         </div>
         <Book />
+      </section>
+      <section id="projects">
+        <Projects baseVelocity={-5} client:idle />
       </section>
     </main>
     <Footer />
