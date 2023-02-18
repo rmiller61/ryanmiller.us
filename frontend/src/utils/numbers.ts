@@ -12,5 +12,6 @@ export const randomNumber = (min: number, max: number) => {
 }
 
 export const wrap = (number: number, min: number, max: number) => {
-  return ((number - min) % (max - min)) + min
+  const rangeSize = max - min
+  return ((((number - min) % rangeSize) + rangeSize) % rangeSize) + min
 }

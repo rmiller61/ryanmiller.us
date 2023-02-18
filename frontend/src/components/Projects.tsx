@@ -56,7 +56,7 @@ export default function Projects({ baseVelocity }: Props) {
    * have to replace for wrapping that works for you or dynamically
    * calculate
    */
-  const x = useTransform(baseX, (v) => `${wrap(-0, -100, v)}%`)
+  const x = useTransform(baseX, (v) => `${wrap(v, -0, -50)}%`)
 
   const directionFactor = useRef<number>(1)
   useAnimationFrame((t, delta) => {
@@ -86,8 +86,13 @@ export default function Projects({ baseVelocity }: Props) {
    */
 
   return (
-    <div className="overflow-hidden">
-      <motion.div className="grid grid-flow-col auto-cols-[1fr]">
+    <div className="overflow-hidden flex flex-nowrap">
+      <motion.div
+        className="grid grid-flow-col auto-cols-[1fr]"
+        style={{
+          x,
+        }}
+      >
         {[...PROJECTS1, ...PROJECTS1].map((project, index) => (
           <Project key={`${project.name}-${index}`} {...project} />
         ))}
