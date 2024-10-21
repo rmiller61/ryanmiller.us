@@ -4,7 +4,6 @@ import defaultTheme from "tailwindcss/defaultTheme";
 import animationDelayPlugin from "tailwindcss-animation-delay";
 // @ts-ignore
 import perspectivePlugin from "@kamona/tailwindcss-perspective";
-import lineClampPlugin from "@tailwindcss/line-clamp";
 import aspectRatioPlugin from "@tailwindcss/aspect-ratio";
 
 export default {
@@ -88,7 +87,6 @@ export default {
   plugins: [
     animationDelayPlugin,
     perspectivePlugin,
-    lineClampPlugin,
     aspectRatioPlugin,
     plugin(function ({
       config,

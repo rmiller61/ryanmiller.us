@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Grifter";
+    src: url("/fonts/grifter_bold-webfont.woff2") format("woff2"),
+      url("/fonts/grifter_bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  p {
+    @apply mb-6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-grifter leading-none mb-6;
+  }
+
+  h1 {
+    @apply text-[calc(1vw+10rem)];
+  }
+
+  h2 {
+    @apply text-[calc(1vw+6rem)];
+  }
+
+  h3 {
+    @apply text-[calc(1vw+4rem)];
+  }
+
+  h4 {
+    @apply text-[calc(1vw+2rem)];
+  }
+
+  h5 {
+    @apply text-[calc(1vw+1rem)];
+  }
+
+  h6 {
+    @apply text-base;
+  }
+}
