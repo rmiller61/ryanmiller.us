@@ -8,6 +8,7 @@ import Projects from "../components/Projects"
 import { PROJECTS } from "../constants"
 import Resume from "../components/Resume.astro"
 import Footer from '../components/Footer.astro'
+import Beats from '../components/Beats.astro'
 ---
 
 <Layout title="Welcome to Astro.">
@@ -69,6 +70,9 @@ import Footer from '../components/Footer.astro'
         >
       </div>
       <Book />
+    </section>
+    <section id="beats" class="pb-24">
+        <Beats />
     </section>
     <section id="projects" class="bg-dark">
       <Projects baseVelocity={2} client:idle items={PROJECTS.slice(0, PROJECTS.length / 2)} />
