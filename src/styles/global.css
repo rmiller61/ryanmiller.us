@@ -12,6 +12,10 @@
     font-display: swap;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   p {
     @apply mb-6;
   }

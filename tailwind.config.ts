@@ -89,7 +89,7 @@ export default {
     perspectivePlugin,
     aspectRatioPlugin,
     plugin(function ({
-      config,
+      addComponents,
       addUtilities,
       addBase,
       theme,
@@ -119,6 +119,9 @@ export default {
             "skewY(var(--tw-skew-y))",
             "scale3d(var(--tw-scale-x), var(--tw-scale-y), var(--tw-scale-z))",
           ].join(" "),
+        },
+        "html, body": {
+          fontFamily: theme("fontFamily.sans"),
         },
       });
 
@@ -203,6 +206,21 @@ export default {
         },
         { values: theme("translateZ") }
       );
+      addComponents({
+        ".button": {
+          backgroundSize: "300% 100%",
+          backgroundImage: `linear-gradient(to right, ${theme(
+            "colors.pink"
+          )}, ${theme("colors.darkRust")}, ${theme(
+            "colors.lightBlue"
+          )}, ${theme("colors.green")})`,
+          backgroundPosition: "0% 0%",
+
+          "&:hover": {
+            backgroundPosition: "100% 0%",
+          },
+        },
+      });
     }),
   ],
 } satisfies Config;
