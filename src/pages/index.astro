@@ -1,9 +1,11 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../layouts/Layout.astro'
 import Header from "../components/Header.astro"
 import Tiles from "../components/Tiles"
 import Book from "../components/Book.astro"
-import Button from '../components/Button';
+import Button from '../components/Button'
+import Projects from "../components/Projects"
+import { PROJECTS } from "../constants"
 ---
 
 <Layout title="Welcome to Astro.">
@@ -65,6 +67,10 @@ import Button from '../components/Button';
         >
       </div>
       <Book />
+    </section>
+    <section id="projects" class="bg-dark">
+      <Projects baseVelocity={2} client:idle items={PROJECTS.slice(0, PROJECTS.length / 2)} />
+      <Projects baseVelocity={-2} client:idle items={PROJECTS.slice(PROJECTS.length / 2, PROJECTS.length)} />
     </section>
   </main>
 </Layout>
