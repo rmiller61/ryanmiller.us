@@ -12,17 +12,14 @@ import image from "@astrojs/image";
 // https://astro.build/config
 import react from "@astrojs/react";
 
+import icon from "astro-icon";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://example.com",
-  integrations: [
-    sitemap(),
-    tailwind(),
-    image({
-      serviceEntryPoint: "@astrojs/image/sharp",
-    }),
-    react(),
-  ],
+  integrations: [sitemap(), tailwind(), image({
+    serviceEntryPoint: "@astrojs/image/sharp",
+  }), react(), icon()],
   vite:
     import.meta.env.DEV === true
       ? {}

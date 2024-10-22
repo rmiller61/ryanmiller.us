@@ -1,0 +1,75 @@
+---
+import { Image } from "@astrojs/image/components"
+import ryan from "../../public/ryan.webp"
+import socialHustleLogo from "../../public/social-hustle-logo.svg"
+import tm34Logo from "../../public/tm34-logo.svg"
+import dsqLogo from "../../public/dsquared-logo.svg"
+import fauLogo from "../../public/FAU-logo.svg"
+import { Icon } from "astro-icon/components"
+---
+
+<style lang="css">
+    [astro-icon] {
+      fill: currentColor;
+      height: 1em;
+      width: 1em;
+    }
+</style>
+
+<section id="resume" class="relative py-32 bg-dark text-white">
+    <div class="container space-y-20 relative z-10">
+        <div class="flex flex-row pr-20">
+            <div class="h-[150px] w-[150px] bg-white rounded-full p-2 flex flex-col justify-center items-center">
+                <img src={socialHustleLogo.src} height={socialHustleLogo.height} width={socialHustleLogo.width} alt="Social Hustle Logo" />
+            </div>
+            <div class="pl-10 flex-1">
+                <h3>Social Hustle</h3>
+                <h5 class="uppercase tracking-widest text-lightBlue">Senior Web Developer</h5>
+                <p><Icon name="bi:chevron-double-right" class="inline-block mr-2" /> March 2022 - Present</p>
+                <hr class="w-[50px] border-t-2" />
+            </div>
+        </div>
+        <div class="flex flex-row pr-20">
+            <div class="h-[150px] w-[150px] bg-white rounded-full p-2 flex flex-col justify-center items-center">
+                <img src={tm34Logo.src} height={tm34Logo.height} width={tm34Logo.width} alt="TM34 Marketing Logo" />
+            </div>
+            <div class="pl-10 flex-1">
+                <h3>TM34 Marketing</h3>
+                <h5 class="uppercase tracking-widest text-lightBlue">Founder & Creative Director</h5>
+                <p><Icon name="bi:chevron-double-right" class="inline-block mr-2" /> October 2015 - March 2022</p>
+                <hr class="w-[50px] border-t-2" />
+            </div>
+        </div>
+        <div class="flex flex-row pr-20">
+            <div class="h-[150px] w-[150px] bg-white rounded-full p-2 flex flex-col justify-center items-center">
+                <img src={dsqLogo.src} height={dsqLogo.height} width={dsqLogo.width} alt="Dsquared Media Logo" />
+            </div>
+            <div class="pl-10 flex-1">
+                <h3>Dsquared Media</h3>
+                <h5 class="uppercase tracking-widest text-lightBlue">Head of Internet Marketing</h5>
+                <p><Icon name="bi:chevron-double-right" class="inline-block mr-2" /> December 2014 - October 2015</p>
+                <hr class="w-[50px] border-t-2" />
+                <h5 class="uppercase tracking-widest text-lightBlue mt-5">Content Writer</h5>
+                <p><Icon name="bi:chevron-double-right" class="inline-block mr-2" /> June 2014 - December 2014</p>
+                <hr class="w-[50px] border-t-2" />
+            </div>
+        </div>
+        <div class="flex flex-row pr-20">
+            <div class="h-[150px] w-[150px] bg-white rounded-full p-2 flex flex-col justify-center items-center">
+                <img src={fauLogo.src} height={fauLogo.height} width={fauLogo.width} alt="FAU Logo" />
+            </div>
+            <div class="pl-10 flex-1">
+                <h3>Florida Atlantic University</h3>
+                <h5 class="uppercase tracking-widest text-lightBlue">B.A., Summa Cum Laude</h5>
+                <p><Icon name="bi:chevron-double-right" class="inline-block mr-2" /> August 2012 - December 2014</p>
+                <p><Icon name="bi:chevron-double-right" class="inline-block mr-2" /> <strong>Major:</strong> Political Science, <strong>Minor:</strong> Economics</p>
+                <p><Icon name="bi:chevron-double-right" class="inline-block mr-2" /> 4.0 Institutional GPA</p>
+            </div>
+        </div>
+    </div>
+    <div class="absolute top-0 right-0 h-full pointer-events-none">
+        <div class="sticky top-0">
+            <Image src={ryan} alt="Ryan Miller Headshot" width={936} height={1401} class="w-auto h-screen" />
+        </div>
+    </div>
+</section>

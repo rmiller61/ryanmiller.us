@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77px" height="81px" viewBox="0 0 77 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>hydrogen-logo</title>
+    <defs>
+        <linearGradient x1="98.1225791%" y1="51.0893134%" x2="24.6726041%" y2="72.0427714%" id="linearGradient-1">
+            <stop stop-color="#430470" offset="0.22437%"></stop>
+            <stop stop-color="#8E01F0" offset="38.547%"></stop>
+            <stop stop-color="#354CF6" offset="63.547%"></stop>
+            <stop stop-color="#01FFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hydrogen-logo" transform="translate(0.163000, 0.298500)" fill-rule="nonzero">
+            <polygon id="Path" fill="#000000" points="37.817 80.1515 0 60.0595 12.934 53.2424 27.495 60.975 39.714 54.5339 25.152 46.8014 38.086 39.968 75.903 60.06 62.969 66.877 49.212 59.5696 36.977 66.0269 50.751 73.3345 37.817 80.1515"></polygon>
+            <polygon id="Path" fill="url(#linearGradient-1)" points="37.817 40.1835 2.84217094e-14 20.0915 12.933 13.2745 27.495 21.007 39.713 14.5659 25.151 6.8334 38.085 7.10542736e-15 75.902 20.092 62.969 26.909 49.212 19.6016 36.976 26.059 50.75 33.3664"></polygon>
+        </g>
+    </g>
+</svg>
