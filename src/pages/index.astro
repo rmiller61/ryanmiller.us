@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from "../components/Header.astro"
+import Tiles from "../components/Tiles"
 ---
 
 <Layout title="Welcome to Astro.">
@@ -38,4 +39,10 @@ import Header from "../components/Header.astro"
       </div>
     </div>
 	<Header />
+  <main class="bg-white">
+    <section id="skills" class="pt-32 overflow-hidden">
+			<h2 class="text-center mb-[-10%]">The <span class="text-rust">Skills</span><br/>That Pay the <span class="text-green">Bills</span></h2>
+			<Tiles client:idle />
+		</section>
+  </main>
 </Layout>
