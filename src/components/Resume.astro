@@ -1,6 +1,6 @@
 ---
 import { Image } from "@astrojs/image/components"
-import ryan from "../../public/ryan.webp"
+import ryan from "../../public/ryan.png"
 import socialHustleLogo from "../../public/social-hustle-logo.svg"
 import tm34Logo from "../../public/tm34-logo.svg"
 import dsqLogo from "../../public/dsquared-logo.svg"
@@ -67,9 +67,9 @@ import {ChevronDoubleRight} from './Icons'
             </div>
         </div>
     </div>
-    <div class="absolute top-0 right-0 h-full pointer-events-none">
+    <div class="absolute top-0 right-0 h-full pointer-events-none hidden sm:block w-[700px]">
         <div class="sticky top-0">
-            <Image src={ryan} alt="Ryan Miller Headshot" width={936} height={1401} class="w-auto h-screen" />
+            <img src={ryan.src} alt="Ryan Miller Headshot" width={ryan.width} height={ryan.height} class="w-full object-contain object-right-bottom min-h-screen opacity-55" />
         </div>
     </div>
 </section>
