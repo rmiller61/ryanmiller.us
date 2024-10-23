@@ -78,7 +78,7 @@ export default function Header({ children }: { children: ReactNode }) {
       <nav
         className={`gap-5 lg:gap-2.5 text-lg lg:text-sm font-grifter tracking-wider fixed top-0 left-0 h-full w-full flex-col text-center ${
           isMenuOpen ? "flex animate-fadeIn" : "hidden"
-        } lg:static lg:w-auto lg:bg-transparent lg:flex-row lg:text-left items-center justify-center lg:h-auto`}
+        } lg:static lg:w-auto lg:bg-transparent lg:flex lg:flex-row lg:text-left items-center justify-center lg:h-auto`}
       >
         <button onClick={() => scrollTo("skills")}>Skills</button>
         <span className="hidden lg:inline">//</span>
