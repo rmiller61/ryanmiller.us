@@ -91,7 +91,7 @@ const Tile = ({ tiles, zIndex }: TileProps) => {
 export default function Tiles() {
   return (
     <div className="scale-y-50">
-      <ul className="w-[70vw] mx-auto grid grid-cols-4 gap-5 sm:gap-10 -rotate-45">
+      <ul className="w-screen lg:w-[70vw] mx-auto grid grid-cols-4 gap-5 sm:gap-10 -rotate-45">
         {Object.entries(SKILLS).map(([key, values], index) => {
           const colNumber = wrap(index, 0, 4);
           const col = interpolate(colNumber, [0, 3], [4, 1]);

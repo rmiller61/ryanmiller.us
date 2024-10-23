@@ -16,13 +16,13 @@ const Path = (props: SVGMotionProps<SVGPathElement>) => (
 export default function Header({ children }: { children: ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const scrollTo = (id: string) => {
+    setIsMenuOpen(false);
     const el = document.getElementById(id);
     const offset = el?.offsetTop ?? 100;
     window.scrollTo({
       top: offset - 75,
       behavior: "smooth",
     });
-    setIsMenuOpen(false);
   };
   return (
     <header
@@ -73,13 +73,12 @@ export default function Header({ children }: { children: ReactNode }) {
         }}
         transition={{
           duration: 0.25,
-          delay: isMenuOpen ? 0 : 0.5,
         }}
       />
       <nav
-        className={`gap-5 lg:gap-2.5 text-lg lg:text-sm font-grifter tracking-wider fixed top-0 left-0 h-full w-full pt-32 flex-col text-center ${
-          isMenuOpen ? "opacity-100 delay-300" : "opacity-0 -z-10"
-        } lg:static lg:w-auto lg:bg-transparent pt-0 transition-opacity duration-500 lg:opacity-100 lg:flex-row lg:text-left flex items-center justify-center lg:h-auto`}
+        className={`gap-5 lg:gap-2.5 text-lg lg:text-sm font-grifter tracking-wider fixed top-0 left-0 h-full w-full flex-col text-center ${
+          isMenuOpen ? "flex animate-fadeIn" : "hidden"
+        } lg:static lg:w-auto lg:bg-transparent lg:flex-row lg:text-left items-center justify-center lg:h-auto`}
       >
         <button onClick={() => scrollTo("skills")}>Skills</button>
         <span className="hidden lg:inline">//</span>

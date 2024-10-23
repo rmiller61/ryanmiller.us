@@ -47,9 +47,14 @@ export default {
           "30%": { transform: "translateY(-100%)", opacity: "0" },
           "100%": { transform: "translateY(-100%)", opacity: "0" },
         },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
       },
       animation: {
         rotateY: "rotateY 10s ease-in-out infinite",
+        fadeIn: "fadeIn 0.5s ease-in-out",
       },
       boxShadow: {
         //tile: "-2px 2px 0 0 rgba(122, 122, 122, 1), -4px 4px 0 0 rgba(122, 122, 122, 1), -6px 6px 0 0 rgba(122, 122, 122, 1), -8px 8px 0 0 rgba(122, 122, 122, 1), -50px 50px 120px 20px rgba(0, 0, 0, 0.5)",
