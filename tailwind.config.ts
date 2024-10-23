@@ -78,6 +78,14 @@ export default {
         corner:
           "linear-gradient(135deg, transparent 47%, #f0f0f0 48%, #fff 55%, #f6f6f6)",
       },
+      fontSize: {
+        h1: "clamp(6rem, calc(1vw + 6rem), 10rem)",
+        h2: "clamp(5rem, calc(1vw + 4rem), 8rem)",
+        h3: "clamp(4rem, calc(1vw + 3rem), 6rem)",
+        h4: "clamp(3rem, calc(1vw + 2rem), 4rem)",
+        h5: "clamp(1.5rem, calc(1vw + 1rem), 2rem)",
+        h6: "clamp(1rem, calc(1vw + 0.5rem), 1.5rem)",
+      },
     },
   },
   extend: {},
@@ -122,6 +130,24 @@ export default {
         },
         "html, body": {
           fontFamily: theme("fontFamily.sans"),
+        },
+        h1: {
+          fontSize: theme("fontSize.h1"),
+        },
+        h2: {
+          fontSize: theme("fontSize.h2"),
+        },
+        h3: {
+          fontSize: theme("fontSize.h3"),
+        },
+        h4: {
+          fontSize: theme("fontSize.h4"),
+        },
+        h5: {
+          fontSize: theme("fontSize.h5"),
+        },
+        h6: {
+          fontSize: theme("fontSize.h6"),
         },
       });
 

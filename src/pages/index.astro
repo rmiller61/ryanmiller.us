@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Header from "../components/Header.astro"
+import Header from "../components/Header"
 import Tiles from "../components/Tiles"
 import Book from "../components/Book.astro"
 import Button from '../components/Button'
@@ -9,16 +9,17 @@ import { PROJECTS } from "../constants"
 import Resume from "../components/Resume.astro"
 import Footer from '../components/Footer.astro'
 import Beats from '../components/Beats.astro'
+import Socials from "../components/Socials.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<div class="from-dark to-black bg-gradient-to-b text-white relative min-h-[calc(100vh-75px)] flex items-center"
+	<div class="from-dark to-black bg-gradient-to-b text-white relative py-36 sm:min-h-[calc(100vh-75px)] flex items-center"
     >
       <div class="container relative z-10">
         <h1 class="text-transparent bg-clip-text bg-gradient-to-r from-lightBlue to-green">
           Ryan Miller
         </h1>
-        <h3>
+        <p class="text-h5 sm:text-h4 lg:text-h2 font-grifter leading-none mb-6">
           <span class="relative flex pb-[1.25em]">
             <span
               class="animate-rotateY opacity-0 whitespace-nowrap inline-block absolute top-0 left-0"
@@ -41,10 +42,12 @@ import Beats from '../components/Beats.astro'
               >Problem Solver</span
             >
           </span>
-        </h3>
+        </p>
       </div>
     </div>
-	<Header />
+	<Header client:idle>
+    <Socials />
+  </Header>
   <main class="bg-white">
     <section id="skills" class="pt-32 overflow-hidden">
 			<h2 class="text-center mb-[-10%]">The <span class="text-rust">Skills</span><br/>That Pay the <span class="text-green">Bills</span></h2>
