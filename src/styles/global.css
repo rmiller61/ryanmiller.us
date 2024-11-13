@@ -26,6 +26,6 @@
   h4,
   h5,
   h6 {
-    @apply font-grifter leading-none mb-6;
+    @apply mb-6 font-grifter leading-none;
   }
 }

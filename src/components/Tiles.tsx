@@ -1,9 +1,9 @@
-import { useState, useCallback } from "react";
-import type { SingleTile } from "../constants/skills";
+import { AnimatePresence, motion } from "framer-motion";
+import { useCallback, useState } from "react";
 import { SKILLS } from "../constants";
-import { isEven, randomNumber, wrap, interpolate } from "../utils/numbers";
-import { motion, AnimatePresence } from "framer-motion";
+import type { SingleTile } from "../constants/skills";
 import { useInterval } from "../hooks";
+import { interpolate, isEven, randomNumber, wrap } from "../utils/numbers";
 
 /**
  * https://www.bypeople.com/3d-css-tiles-photos/

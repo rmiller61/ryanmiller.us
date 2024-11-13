@@ -1,10 +1,10 @@
-import type { Config } from "tailwindcss";
-import plugin from "tailwindcss/plugin";
-import defaultTheme from "tailwindcss/defaultTheme";
-import animationDelayPlugin from "tailwindcss-animation-delay";
 // @ts-ignore
 import perspectivePlugin from "@kamona/tailwindcss-perspective";
 import aspectRatioPlugin from "@tailwindcss/aspect-ratio";
+import type { Config } from "tailwindcss";
+import animationDelayPlugin from "tailwindcss-animation-delay";
+import defaultTheme from "tailwindcss/defaultTheme";
+import plugin from "tailwindcss/plugin";
 
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],

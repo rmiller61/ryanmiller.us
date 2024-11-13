@@ -1,75 +1,152 @@
 ---
-import { Image } from "@astrojs/image/components"
-import ryan from "../../public/ryan.png"
-import socialHustleLogo from "../../public/social-hustle-logo.svg"
-import tm34Logo from "../../public/tm34-logo.svg"
-import dsqLogo from "../../public/dsquared-logo.svg"
-import fauLogo from "../../public/FAU-logo.svg"
-import {ChevronDoubleRight} from './Icons'
+import { Image } from "@astrojs/image/components";
+import dsqLogo from "../../public/dsquared-logo.svg";
+import fauLogo from "../../public/FAU-logo.svg";
+import ryan from "../../public/ryan.png";
+import socialHustleLogo from "../../public/social-hustle-logo.svg";
+import tm34Logo from "../../public/tm34-logo.svg";
+import { ChevronDoubleRight } from "./Icons";
 ---
 
 <style lang="css">
-    [astro-icon] {
-      fill: currentColor;
-      height: 1em;
-      width: 1em;
-    }
+  [astro-icon] {
+    fill: currentColor;
+    height: 1em;
+    width: 1em;
+  }
 </style>
 
-<section id="resume" class="relative py-32 bg-dark text-white text-center sm:text-left">
-    <div class="container space-y-20 relative z-10">
-        <div class="flex flex-col gap-10 items-center sm:items-start sm:flex-row sm:pr-20">
-            <div class="h-[150px] w-[150px] bg-white rounded-full p-2 flex flex-col justify-center items-center">
-                <img src={socialHustleLogo.src} height={socialHustleLogo.height} width={socialHustleLogo.width} alt="Social Hustle Logo" />
-            </div>
-            <div class="flex-1">
-                <h3>Social Hustle</h3>
-                <h5 class="uppercase tracking-widest text-lightBlue">Senior Web Developer</h5>
-                <p><ChevronDoubleRight className="inline-block mr-2" /> March 2022 - Present</p>
-                <hr class="w-[50px] border-t-2 mx-auto sm:mx-0" />
-            </div>
-        </div>
-        <div class="flex flex-col gap-10 items-center sm:items-start sm:flex-row sm:pr-20">
-            <div class="h-[150px] w-[150px] bg-white rounded-full p-2 flex flex-col justify-center items-center">
-                <img src={tm34Logo.src} height={tm34Logo.height} width={tm34Logo.width} alt="TM34 Marketing Logo" />
-            </div>
-            <div class="flex-1">
-                <h3>TM34 Marketing</h3>
-                <h5 class="uppercase tracking-widest text-lightBlue">Founder & Creative Director</h5>
-                <p><ChevronDoubleRight className="inline-block mr-2" /> October 2015 - March 2022</p>
-                <hr class="w-[50px] border-t-2 mx-auto sm:mx-0" />
-            </div>
-        </div>
-        <div class="flex flex-col gap-10 items-center sm:items-start sm:flex-row sm:pr-20">
-            <div class="h-[150px] w-[150px] bg-white rounded-full p-2 flex flex-col justify-center items-center">
-                <img src={dsqLogo.src} height={dsqLogo.height} width={dsqLogo.width} alt="Dsquared Media Logo" />
-            </div>
-            <div class="flex-1">
-                <h3>Dsquared Media</h3>
-                <h5 class="uppercase tracking-widest text-lightBlue">Head of Internet Marketing</h5>
-                <p><ChevronDoubleRight className="inline-block mr-2" /> December 2014 - October 2015</p>
-                <hr class="w-[50px] border-t-2 mx-auto sm:mx-0" />
-                <h5 class="uppercase tracking-widest text-lightBlue mt-5">Content Writer</h5>
-                <p><ChevronDoubleRight className="inline-block mr-2" /> June 2014 - December 2014</p>
-                <hr class="w-[50px] border-t-2 mx-auto sm:mx-0" />
-            </div>
-        </div>
-        <div class="flex flex-col gap-10 items-center sm:items-start sm:flex-row sm:pr-20">
-            <div class="h-[150px] w-[150px] bg-white rounded-full p-2 flex flex-col justify-center items-center">
-                <img src={fauLogo.src} height={fauLogo.height} width={fauLogo.width} alt="FAU Logo" />
-            </div>
-            <div class="flex-1">
-                <h3>Florida Atlantic University</h3>
-                <h5 class="uppercase tracking-widest text-lightBlue">B.A., Summa Cum Laude</h5>
-                <p><ChevronDoubleRight className="inline-block mr-2" /> August 2012 - December 2014</p>
-                <p><ChevronDoubleRight className="inline-block mr-2" /> <strong>Major:</strong> Political Science, <strong>Minor:</strong> Economics</p>
-                <p><ChevronDoubleRight className="inline-block mr-2" /> 4.0 Institutional GPA</p>
-            </div>
-        </div>
+<section
+  id="resume"
+  class="relative bg-dark py-32 text-center text-white sm:text-left"
+>
+  <div class="container relative z-10 space-y-20">
+    <div
+      class="flex flex-col items-center gap-10 sm:flex-row sm:items-start sm:pr-20"
+    >
+      <div
+        class="flex h-[150px] w-[150px] flex-col items-center justify-center rounded-full bg-white p-2"
+      >
+        <img
+          src={socialHustleLogo.src}
+          height={socialHustleLogo.height}
+          width={socialHustleLogo.width}
+          alt="Social Hustle Logo"
+        />
+      </div>
+      <div class="flex-1">
+        <h3>Social Hustle</h3>
+        <h5 class="uppercase tracking-widest text-lightBlue">
+          Senior Web Developer
+        </h5>
+        <p>
+          <ChevronDoubleRight className="inline-block mr-2" /> March 2022 - Present
+        </p>
+        <hr class="mx-auto w-[50px] border-t-2 sm:mx-0" />
+      </div>
     </div>
-    <div class="absolute top-0 right-0 h-full pointer-events-none hidden sm:block w-[700px]">
-        <div class="sticky top-0">
-            <img src={ryan.src} alt="Ryan Miller Headshot" width={ryan.width} height={ryan.height} class="w-full object-contain object-right-bottom min-h-screen opacity-55" />
-        </div>
+    <div
+      class="flex flex-col items-center gap-10 sm:flex-row sm:items-start sm:pr-20"
+    >
+      <div
+        class="flex h-[150px] w-[150px] flex-col items-center justify-center rounded-full bg-white p-2"
+      >
+        <img
+          src={tm34Logo.src}
+          height={tm34Logo.height}
+          width={tm34Logo.width}
+          alt="TM34 Marketing Logo"
+        />
+      </div>
+      <div class="flex-1">
+        <h3>TM34 Marketing</h3>
+        <h5 class="uppercase tracking-widest text-lightBlue">
+          Founder & Creative Director
+        </h5>
+        <p>
+          <ChevronDoubleRight className="inline-block mr-2" /> October 2015 - March
+          2022
+        </p>
+        <hr class="mx-auto w-[50px] border-t-2 sm:mx-0" />
+      </div>
     </div>
+    <div
+      class="flex flex-col items-center gap-10 sm:flex-row sm:items-start sm:pr-20"
+    >
+      <div
+        class="flex h-[150px] w-[150px] flex-col items-center justify-center rounded-full bg-white p-2"
+      >
+        <img
+          src={dsqLogo.src}
+          height={dsqLogo.height}
+          width={dsqLogo.width}
+          alt="Dsquared Media Logo"
+        />
+      </div>
+      <div class="flex-1">
+        <h3>Dsquared Media</h3>
+        <h5 class="uppercase tracking-widest text-lightBlue">
+          Head of Internet Marketing
+        </h5>
+        <p>
+          <ChevronDoubleRight className="inline-block mr-2" /> December 2014 - October
+          2015
+        </p>
+        <hr class="mx-auto w-[50px] border-t-2 sm:mx-0" />
+        <h5 class="mt-5 uppercase tracking-widest text-lightBlue">
+          Content Writer
+        </h5>
+        <p>
+          <ChevronDoubleRight className="inline-block mr-2" /> June 2014 - December
+          2014
+        </p>
+        <hr class="mx-auto w-[50px] border-t-2 sm:mx-0" />
+      </div>
+    </div>
+    <div
+      class="flex flex-col items-center gap-10 sm:flex-row sm:items-start sm:pr-20"
+    >
+      <div
+        class="flex h-[150px] w-[150px] flex-col items-center justify-center rounded-full bg-white p-2"
+      >
+        <img
+          src={fauLogo.src}
+          height={fauLogo.height}
+          width={fauLogo.width}
+          alt="FAU Logo"
+        />
+      </div>
+      <div class="flex-1">
+        <h3>Florida Atlantic University</h3>
+        <h5 class="uppercase tracking-widest text-lightBlue">
+          B.A., Summa Cum Laude
+        </h5>
+        <p>
+          <ChevronDoubleRight className="inline-block mr-2" /> August 2012 - December
+          2014
+        </p>
+        <p>
+          <ChevronDoubleRight className="inline-block mr-2" />
+          <strong>Major:</strong> Political Science, <strong>Minor:</strong> Economics
+        </p>
+        <p>
+          <ChevronDoubleRight className="inline-block mr-2" /> 4.0 Institutional
+          GPA
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="pointer-events-none absolute right-0 top-0 hidden h-full w-[700px] sm:block"
+  >
+    <div class="sticky top-0">
+      <img
+        src={ryan.src}
+        alt="Ryan Miller Headshot"
+        width={ryan.width}
+        height={ryan.height}
+        class="min-h-screen w-full object-contain object-right-bottom opacity-55"
+      />
+    </div>
+  </div>
 </section>

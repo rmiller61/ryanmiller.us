@@ -1,15 +1,15 @@
-import { useRef } from "react";
 import {
   motion,
+  useAnimationFrame,
+  useMotionValue,
   useScroll,
   useSpring,
   useTransform,
-  useMotionValue,
   useVelocity,
-  useAnimationFrame,
 } from "framer-motion";
-import { wrap } from "../utils/numbers";
+import { useRef } from "react";
 import type { Project } from "../constants/projects";
+import { wrap } from "../utils/numbers";
 
 const Project = ({ name, media }: Project) => {
   return (
