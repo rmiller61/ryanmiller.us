@@ -27,8 +27,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0
       '@social-hustle/utils-classnames':
-        specifier: ^1.1.1
-        version: 1.1.1
+        specifier: ^1.2.0
+        version: 1.2.0
       astro:
         specifier: ^4.16.11
         version: 4.16.11(rollup@4.24.0)(typescript@5.6.3)
@@ -777,8 +777,8 @@ packages:
   '@shikijs/vscode-textmate@9.3.0':
     resolution: {integrity: sha512-jn7/7ky30idSkd/O5yDBfAnVt+JJpepofP/POZ1iMOxK59cOfqIgg/Dj0eFsjOTMw+4ycJN0uhZH/Eb0bs/EUA==}
 
-  '@social-hustle/utils-classnames@1.1.1':
-    resolution: {integrity: sha512-W3u+Ksn5wfAD8XBMw/siKlESgiAN2qLeu9wSxggHomIkJ1rh2uqEm6PoHT5F9dDfhrBUVwAa+FDGn6JsglBiYg==}
+  '@social-hustle/utils-classnames@1.2.0':
+    resolution: {integrity: sha512-0HTXuPfENDcrqGuH+Vzq52IrM127hn4MqJo9NLIWp4B1DYVkZtY6RmDsrMbuKvffk2xJqJXcKVyW9aoWnrUlyw==}
 
   '@tailwindcss/aspect-ratio@0.4.2':
     resolution: {integrity: sha512-8QPrypskfBa7QIMuKHg2TA7BqES6vhBrDLOv8Unb6FcFyd3TjKbc6lcmb9UPQHxfl24sXoJ41ux/H7qQQvfaSQ==}
@@ -3359,7 +3359,7 @@ snapshots:
 
   '@shikijs/vscode-textmate@9.3.0': {}
 
-  '@social-hustle/utils-classnames@1.1.1':
+  '@social-hustle/utils-classnames@1.2.0':
     dependencies:
       clsx: 1.2.1
       tailwind-merge: 1.11.0

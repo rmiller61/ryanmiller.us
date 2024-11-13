@@ -17,11 +17,13 @@ export default defineConfig({
   site: "https://example.com",
   integrations: [
     sitemap(),
-    tailwind(),
     image({
       serviceEntryPoint: "@astrojs/image/sharp",
     }),
     react(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
   ],
   vite:
     import.meta.env.DEV === true

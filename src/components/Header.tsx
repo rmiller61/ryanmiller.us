@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import type { SVGMotionProps } from "framer-motion";
+import { cn } from "@social-hustle/utils-classnames";
 
 const Path = (props: SVGMotionProps<SVGPathElement>) => (
   <motion.path
@@ -26,7 +27,9 @@ export default function Header({ children }: { children: ReactNode }) {
   };
   return (
     <header
-      className={`z-[100] fixed left-0 w-full lg:sticky px-8 top-0 h-[75px] flex justify-between mb-0 items-center bg-dark text-white border-b border-b-white/50 lg:border-b-0 lg:border-t lg:border-t-white/75`}
+      className={cn(
+        `z-[100] fixed left-0 w-full lg:sticky px-8 top-0 h-[75px] flex justify-between mb-0 items-center bg-dark text-white border-b border-b-white/50 lg:border-b-0 lg:border-t lg:border-t-white/75`
+      )}
     >
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -76,9 +79,10 @@ export default function Header({ children }: { children: ReactNode }) {
         }}
       />
       <nav
-        className={`gap-5 lg:gap-2.5 text-lg lg:text-sm font-grifter tracking-wider fixed top-0 left-0 h-full w-full flex-col text-center ${
+        className={cn(
+          `gap-5 lg:gap-2.5 text-lg lg:text-sm font-grifter tracking-wider fixed top-0 left-0 h-full w-full flex-col text-center lg:static lg:w-auto lg:bg-transparent lg:flex lg:flex-row lg:text-left items-center justify-center lg:h-auto`,
           isMenuOpen ? "flex animate-fadeIn" : "hidden"
-        } lg:static lg:w-auto lg:bg-transparent lg:flex lg:flex-row lg:text-left items-center justify-center lg:h-auto`}
+        )}
       >
         <button onClick={() => scrollTo("skills")}>Skills</button>
         <span className="hidden lg:inline">//</span>
