@@ -13,7 +13,7 @@ import hvf from "../assets/projects/hvf.jpg?url";
 import groceryGripps from "../assets/projects/grocery-gripps.jpg?url";
 import { type Project } from "./projects";
 
-export const PORTFOLIO: Array<Project> = [
+export const PORTFOLIO: Array<Project & { slug: string }> = [
   {
     name: "Air Locker Training",
     media: {
@@ -21,6 +21,7 @@ export const PORTFOLIO: Array<Project> = [
       video: "/projects/ALT.mp4",
       poster: "/projects/alt-poster.jpg",
     },
+    slug: "air-locker-training",
   },
   {
     name: "Gummy Tech",
@@ -28,6 +29,7 @@ export const PORTFOLIO: Array<Project> = [
       type: "IMAGE",
       image: gummyTech,
     },
+    slug: "gummy-tech",
   },
   {
     name: "TM34",
@@ -35,6 +37,7 @@ export const PORTFOLIO: Array<Project> = [
       type: "IMAGE",
       image: tm34,
     },
+    slug: "tm34-marketing",
   },
   {
     name: "Heath Treasure",
@@ -42,6 +45,7 @@ export const PORTFOLIO: Array<Project> = [
       type: "IMAGE",
       image: heath,
     },
+    slug: "heath-treasure",
   },
   {
     name: "Rocally",
@@ -49,6 +53,7 @@ export const PORTFOLIO: Array<Project> = [
       type: "IMAGE",
       image: rocally,
     },
+    slug: "rocally",
   },
   {
     name: "Solar Energy Partners",
@@ -56,6 +61,7 @@ export const PORTFOLIO: Array<Project> = [
       type: "IMAGE",
       image: sep,
     },
+    slug: "solar-energy-partners",
   },
   {
     name: "Social Hustle",
@@ -63,6 +69,7 @@ export const PORTFOLIO: Array<Project> = [
       type: "IMAGE",
       image: socialHustle,
     },
+    slug: "social-hustle",
   },
   {
     name: "Stay Awhile Villas",
@@ -70,6 +77,7 @@ export const PORTFOLIO: Array<Project> = [
       type: "IMAGE",
       image: stayAwhile,
     },
+    slug: "stay-awhile-villas",
   },
   {
     name: "Super T Transportation",
@@ -78,6 +86,7 @@ export const PORTFOLIO: Array<Project> = [
       video: "/projects/super-t.mp4",
       poster: "/projects/super-t-poster.jpg",
     },
+    slug: "super-t-transportation",
   },
   {
     name: "Alt Franchise",
@@ -85,6 +94,7 @@ export const PORTFOLIO: Array<Project> = [
       type: "IMAGE",
       image: altFranchise,
     },
+    slug: "alt-franchise",
   },
   {
     name: "Ana",
@@ -92,6 +102,7 @@ export const PORTFOLIO: Array<Project> = [
       type: "IMAGE",
       image: ana,
     },
+    slug: "ana",
   },
   {
     name: "Braggn Beauty",
@@ -99,6 +110,7 @@ export const PORTFOLIO: Array<Project> = [
       type: "IMAGE",
       image: braggnBeauty,
     },
+    slug: "braggn-beauty",
   },
   {
     name: "Grocery Gripps",
@@ -106,6 +118,7 @@ export const PORTFOLIO: Array<Project> = [
       type: "IMAGE",
       image: groceryGripps,
     },
+    slug: "grocery-gripps",
   },
   {
     name: "Coretrust",
@@ -113,12 +126,14 @@ export const PORTFOLIO: Array<Project> = [
       type: "IMAGE",
       image: coretrust,
     },
+    slug: "coretrust",
   },
   {
-    name: "HVF",
+    name: "Hudson Valley Farms",
     media: {
       type: "IMAGE",
       image: hvf,
     },
+    slug: "hudson-valley-farms",
   },
 ];

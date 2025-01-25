@@ -1,7 +1,5 @@
 ---
 import Footer from "../components/Footer.astro";
-import BaseHead from "../components/BaseHead.astro";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../constants";
 import {PORTFOLIO } from "../constants/portfolio";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -9,8 +7,8 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Welcome to Astro.">
   <main class="relative flex items-center bg-gradient-to-b from-dark to-black py-36 text-white">
       <div class="container grid sm:grid-cols-3 gap-10">
-        {PORTFOLIO.map(({ name, media }) => (
-          <div>
+        {PORTFOLIO.map(({ name, media, slug }) => (
+          <a class="block" href={`/portfolio/${slug}`}>
             <div class="aspect-w-4 aspect-h-3">
               {media.type === "IMAGE" ? (
                 <img src={media.image} alt={name} />
@@ -18,7 +16,7 @@ import Layout from "../layouts/Layout.astro";
                 <video src={media.video} poster={media.poster} muted autoplay loop />
               )}
             </div>
-          </div>
+          </a>
         ))}
       </div>
   </main>

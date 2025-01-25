@@ -1,0 +1,51 @@
+---
+import Footer from "../../components/Footer.astro";
+import Layout from "../../layouts/Layout.astro";
+import wordpress from "../../assets/wordpress.svg";
+import javascript from "../../assets/javascript.svg";
+import sass from "../../assets/sass.svg";
+import sketch from "../../assets/sketch.svg";
+import adobephotoshop from "../../assets/adobe-photoshop.svg";
+import tm34_1 from "../../assets/portfolio/tm34/tm34-1.jpg";
+import tm34_2 from "../../assets/portfolio/tm34/tm34-2.jpg";
+import tm34_3 from "../../assets/portfolio/tm34/tm34-3.jpg";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="relative flex flex-col bg-gradient-to-b from-dark to-black py-36 text-white">
+     <div class="container mb-20">
+      <div class="space-y-10 max-w-lg mb-10">
+        <h1>TM34 Marketing</h1>
+        <p class="text-2xl font-light">TM34 Marketing was a full-service marketing founded in 2015. For their site, I sought to create a unique voice and brand identity that evoked both professionalism and creativity.</p>
+      </div>
+      <ul class="flex space-x-4">
+        <li class="flex items-center space-x-2 py-2 px-4 border border-white bg-white/10 rounded-xl text-sm">
+          <img src={wordpress.src} alt="WordPress" class="w-6 h-auto" />
+          <span>WordPress</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 border border-white bg-white/10 rounded-xl text-sm">
+          <img src={javascript.src} alt="JavaScript" class="w-6 h-auto" />
+          <span>Javascript</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 border border-white bg-white/10 rounded-xl text-sm">
+          <img src={sass.src} alt="Sass" class="w-6 h-auto" />
+          <span>SASS</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 border border-white bg-white/10 rounded-xl text-sm">
+          <img src={sketch.src} alt="Sketch" class="w-6 h-auto" />
+          <span>Sketch</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 border border-white bg-white/10 rounded-xl text-sm">
+          <img src={adobephotoshop.src} alt="Adobe Photoshop" class="w-6 h-auto" />
+          <span>Photoshop</span>
+        </li>
+      </ul>
+    </div>
+    <div class="max-w-[1400px] mx-auto">
+      <img src={tm34_1.src} alt="TM34 Marketing" class="w-full h-auto" />
+      <img src={tm34_2.src} alt="TM34 Marketing" class="w-full h-auto" />
+      <img src={tm34_3.src} alt="TM34 Marketing" class="w-full h-auto" />
+    </div>
+  </main>
+  <Footer />
+</Layout>
