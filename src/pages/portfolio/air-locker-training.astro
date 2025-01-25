@@ -1,0 +1,63 @@
+---
+import Footer from "../../components/Footer.astro";
+import Layout from "../../layouts/Layout.astro";
+import nextjs from "../../assets/nextjs.svg";
+import graphql from "../../assets/graphql.svg";
+import framer from "../../assets/framer.svg";
+import tailwind from "../../assets/tailwind.svg";
+import threejs from "../../assets/threejs.svg";
+import figma from "../../assets/figma.svg";
+import dotcms from "../../assets/dotcms.svg";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="relative flex flex-col bg-gradient-to-b from-dark to-black py-36 text-white">
+     <div class="container mb-20">
+      <div style="max-width: 45rem" class="space-y-10 mb-10">
+        <a href="/portfolio" class="inline-flex gap-2 items-center">
+          <svg class="h-[1em] w-[1em]" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"></path></svg>
+          <span>Back to Portfolio</span>
+        </a>
+        <h1>Air Locker Training</h1>
+        <p class="text-2xl font-light">ALT is a fitness franchise that specializes in high-altitude trainint. To highlight the benefits of their approach, I created a highly interactive web experience using React, WebGL and headless content via DotCMS.</p>
+      </div>
+      <ul class="flex space-x-4">
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={nextjs.src} alt="NextJS" class="w-6 h-auto" />
+          <span>Next.js</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={dotcms.src} alt="DotCMS" class="w-6 h-auto" />
+          <span>DotCMS</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={graphql.src} alt="GraphQL" class="w-6 h-auto" />
+          <span>GraphQL</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={framer.src} alt="Sketch" class="w-6 h-auto" />
+          <span>Motion</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={threejs.src} alt="Three.js" class="w-6 h-auto" />
+          <span>Three.js</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={tailwind.src} alt="Tailwind" class="w-6 h-auto" />
+          <span>Tailwind</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={figma.src} alt="Figma" class="w-6 h-auto" />
+          <span>Figma</span>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="max-w-[800px] space-y-5">
+        <video src={`/projects/ALT.mp4`} poster={`/projects/alt-poster.jpg`} muted autoplay loop />
+        <video src={`/portfolio/alt2.mp4`} poster={`/projects/alt2poster.jpg`} muted autoplay loop />
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>
