@@ -1,0 +1,144 @@
+---
+import Footer from "../../components/Footer.astro";
+import Layout from "../../layouts/Layout.astro";
+import blitzjs from "../../assets/blitzjs.svg";
+import figma from "../../assets/figma.svg";
+import tailwind from "../../assets/tailwind.svg";
+import aws from "../../assets/aws.svg";
+import reactQuery from "../../assets/react-query.svg";
+import postgresSql from "../../assets/postgresql.svg";
+import prisma from "../../assets/prisma.svg";
+import homepage from "../../assets/portfolio/rocally/rocally-homepage.jpg";
+import login from "../../assets/portfolio/rocally/rocally-login.jpg";
+import loginError from "../../assets/portfolio/rocally/rocally-login-error.jpg";
+import searchList from "../../assets/portfolio/rocally/rocally-search-list.jpg";
+import searchGrid from "../../assets/portfolio/rocally/rocally-search-grid.jpg";
+import businessProfile from "../../assets/portfolio/rocally/rocally-business-profile.jpg";
+import businessProfileCovid from "../../assets/portfolio/rocally/rocally-business-profile-covid.jpg";
+import businessProfileMedia from "../../assets/portfolio/rocally/rocally-business-profile-media.jpg";
+import businessProfileAvailability from "../../assets/portfolio/rocally/rocally-business-profile-availability.jpg";
+import billing from "../../assets/portfolio/rocally/rocally-billing.png";
+import businessCalendar from "../../assets/portfolio/rocally/rocally-business-calendar.jpg";
+import img404 from "../../assets/portfolio/rocally/rocally-404.jpg";
+import authError from "../../assets/portfolio/rocally/rocally-auth-error.jpg";
+import messages from "../../assets/portfolio/rocally/rocally-messages.jpg";
+import superadmin from "../../assets/portfolio/rocally/rocally-suparadmin.jpg";
+import userProfile from "../../assets/portfolio/rocally/rocally-user-profile.jpg";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="relative flex flex-col bg-gradient-to-b from-dark to-black py-36 text-white">
+     <div class="container mb-20">
+      <div style="max-width: 45rem" class="space-y-10 mb-10">
+        <a href="/portfolio" class="inline-flex gap-2 items-center">
+          <svg class="h-[1em] w-[1em]" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"></path></svg>
+          <span>Back to Portfolio</span>
+        </a>
+        <h1>Rocally</h1>
+        <p class="text-2xl font-light">Rocally is a search engine and social media SaaS application with a focus on supporting small businesses. This expansive project used Blitz.js, Prisma and React Query to quickly ship a feature-rich application that included searches, reviews, and real-time messaging.</p>
+        <a class="inline-flex items-center gap-5 hover:bg-white hover:text-dark ease-in-out duration-500 transition-all px-8 py-3 text-sm border border-white rounded-full" href="https://solarenergy.partners/" target="_blank">
+          <span>View Website</span>
+          <svg class="h-[1em] w-[1em]" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg>
+        </a>
+      </div>
+      <ul class="flex space-x-4">
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={blitzjs.src} alt="Blitz.js" class="w-6 h-auto" />
+          <span>Blitz.js</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={tailwind.src} alt="Tailwind" class="w-6 h-auto" />
+          <span>Tailwind</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={reactQuery.src} alt="React Query" class="w-6 h-auto" />
+          <span>React Query</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={prisma.src} alt="Prisma" class="w-6 h-auto" />
+          <span>Prisma</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={postgresSql.src} alt="Postgres" class="w-6 h-auto" />
+          <span>PostgresSQL</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={figma.src} alt="Figma" class="w-6 h-auto" />
+          <span>Figma</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={aws.src} alt="AWS" class="w-6 h-auto" />
+          <span>AWS</span>
+        </li>
+      </ul>
+    </div>
+    <div class="container space-y-20">
+      <div class="space-y-10">
+        <h3>Login</h3>
+        <div class="sm:grid-cols-2 grid gap-10">
+          <img src={login.src} alt="Rocally Login" class="w-full h-auto" />
+          <img src={loginError.src} alt="Rocally Login Error" class="w-full h-auto sm:mt-[25%]" />
+        </div>
+      </div>
+      <div class="space-y-10">
+        <h3>Onboarding Flow</h3>
+        <video src={`/portfolio/rocally-onboarding.mp4`} poster={`/portfolio/rocally-onboarding-poster.jpg`} muted autoplay loop />
+      </div>
+      <div class="space-y-10">
+        <h3>Search Results</h3>
+        <div class="sm:grid-cols-2 grid gap-10">
+          <img src={searchList.src} alt="Rocally Search List View" class="w-full h-auto" />
+          <img src={searchGrid.src} alt="Rocally Search Grid View" class="w-full h-auto sm:mt-[25%]" />
+        </div>
+      </div>
+      <div class="space-y-10">
+        <h3>Business Profile</h3>
+        <div class="sm:grid-cols-2 grid gap-10">
+          <div class="flex flex-col space-y-10">
+            <img src={businessProfile.src} alt="Rocally Business Profile" class="w-full h-auto" />
+            <img src={businessProfileCovid.src} alt="Rocally Business Profile Covid" class="w-full h-auto" />
+          </div>
+          <div class="sm:mt-[25%] flex flex-col space-y-10">
+            <img src={businessProfileMedia.src} alt="Rocally Business Profile Media" class="w-full h-auto" />
+            <img src={businessProfileAvailability.src} alt="Rocally Business Profile Availability" class="w-full h-auto" />
+          </div>
+        </div>
+      </div>
+      <div class="space-y-10">
+        <h3>Business Back End</h3>
+        <div class="sm:grid-cols-2 grid gap-10">
+          <img src={billing.src} alt="Rocally Business Billing" class="w-full h-auto" />
+          <img src={businessCalendar.src} alt="Rocally Business Calendar" class="w-full h-auto sm:mt-[25%]" />
+        </div>
+      </div>
+      <div class="sm:grid-cols-2 grid gap-10">
+        <div>
+          <h3>Homepage</h3>
+          <img src={homepage.src} alt="Rocally Homepage" class="w-full h-auto" />
+        </div>
+        <div class="flex flex-col space-y-10 sm:mt-[25%]">
+          <div>
+            <h3>User Profile</h3>
+            <img src={userProfile.src} alt="Rocally User Profile" class="w-full h-auto" />
+          </div>
+          <div>
+            <h3>Admin UI</h3>
+            <img src={superadmin.src} alt="Rocally Admin UI" class="w-full h-auto" />
+          </div>
+          <div>
+            <h3>Messages</h3>
+            <img src={messages.src} alt="Messages" class="w-full h-auto" />
+          </div>
+        </div>
+      </div>
+      <div class="space-y-10">
+        <h3>Error Pages</h3>
+        <div class="sm:grid-cols-2 grid gap-10">
+          <img src={img404.src} alt="404 Page" class="w-full h-auto" />
+          <img src={authError.src} alt="Auth Error Page" class="w-full h-auto sm:mt-[25%]" />
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>
