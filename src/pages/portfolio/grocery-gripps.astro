@@ -1,0 +1,82 @@
+---
+import Footer from "../../components/Footer.astro";
+import Layout from "../../layouts/Layout.astro";
+import shopify from "../../assets/shopify.svg";
+import sketch from "../../assets/sketch.svg";
+import adobeillustrator from "../../assets/adobe-illustrator.svg";
+import adobephotoshop from "../../assets/adobe-photoshop.svg";
+import ggHomepage from "../../assets/portfolio/grocery-gripps/gg-homepage.jpg?url";
+import ggProductPage from "../../assets/portfolio/grocery-gripps/gg-product-page.jpg?url";
+import trifold from "../../assets/portfolio/grocery-gripps/trifold.png?url";
+import packaging from "../../assets/portfolio/grocery-gripps/packaging.png?url";
+import handOutFront from "../../assets/portfolio/grocery-gripps/handout-front.jpg?url";
+import handOutBack from "../../assets/portfolio/grocery-gripps/handout-back.jpg?url";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="relative flex flex-col bg-gradient-to-b from-dark to-black py-36 text-white">
+     <div class="container mb-20">
+      <div style="max-width: 45rem" class="space-y-10 mb-10">
+        <a href="/portfolio" class="inline-flex gap-2 items-center">
+          <svg class="h-[1em] w-[1em]" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"></path></svg>
+          <span>Back to Portfolio</span>
+        </a>
+        <h1>Heath Treasure</h1>
+        <p class="text-2xl font-light">Grocery Gripps offers a unique solution to urban shopping. To convey this to a mass market, I undertook a comprehensive website design & branding campaign.</p>
+      </div>
+      <ul class="flex space-x-4">
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={shopify.src} alt="Shopify" class="w-6 h-auto" />
+          <span>Shopify</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={sketch.src} alt="Sketch" class="w-6 h-auto" />
+          <span>Sketch</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={adobephotoshop.src} alt="Photoshop" class="w-6 h-auto" />
+          <span>Photoshop</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={adobeillustrator.src} alt="Illustrator" class="w-6 h-auto" />
+          <span>Illustrator</span>
+        </li>
+      </ul>
+    </div>
+    <div class="container grid md:grid-cols-3 gap-10 mb-20">
+      <div>
+        <div class="space-y-5 md:sticky top-20">
+          <h3>Website Design</h3>
+          <p>The goal of the website was to convey the benefits of the product as succinctly as possible.</p>
+        </div>
+      </div>
+      <div>
+        <img src={ggHomepage} alt="Grocery Gripps Homepage" />
+      </div>
+      <div>
+        <img src={ggProductPage} alt="Grocery Gripps Product Page" />
+      </div>
+    </div>
+    <div class="container grid md:grid-cols-2 gap-10 mb-20">
+      <div class="sm:order-2">
+        <div class="space-y-5 md:sticky top-20">
+          <h3>Packaging & Print Materials</h3>
+          <p>In addition, I designed simple & high-quality designs for physical marketing collateral.</p>
+        </div>
+      </div>
+      <div class="space-y-20 flex flex-col items-center">
+        <img src={packaging} alt="Grocery Gripps Packaging" />
+        <img src={trifold} alt="Grocery Gripps Trifold Design" />
+      </div>
+    </div>
+    <div class="container max-w-4xl text-center">
+      <h3>Branding</h3>
+      <p>Simple yet effective business cards & handouts for a cohesive brand identity.</p>
+      <div class="grid sm:grid-cols-2 gap-10">
+        <img src={handOutFront} alt="Grocery Gripps Business Card Front" />
+        <img src={handOutBack} alt="Grocery Gripps Business Card Back" />
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>
