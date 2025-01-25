@@ -104,7 +104,13 @@ import Layout from "../layouts/Layout.astro";
     <section id="beats" class="pb-24 pt-32 lg:pt-0">
       <Beats />
     </section>
-    <section id="projects" class="bg-dark">
+    <section id="projects">
+      <div class="container relative z-10 text-center space-y-5 mb-20">
+        <h2>Portfolio</h2>
+        <Button href="/portfolio">
+          View All Projects
+        </Button>
+      </div>
       <Projects
         baseVelocity={2}
         client:idle
