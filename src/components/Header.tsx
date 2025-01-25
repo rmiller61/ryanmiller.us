@@ -1,6 +1,5 @@
 import { cn } from "@social-hustle/utils-classnames";
-import { motion } from "framer-motion";
-import type { SVGMotionProps } from "framer-motion";
+import { motion, type SVGMotionProps } from "motion/react";
 import type { ReactNode } from "react";
 import { useState } from "react";
 
