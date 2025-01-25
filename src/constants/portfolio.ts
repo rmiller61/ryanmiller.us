@@ -24,12 +24,12 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
     slug: "air-locker-training",
   },
   {
-    name: "Gummy Tech",
+    name: "Gummy Technologies",
     media: {
       type: "IMAGE",
       image: gummyTech,
     },
-    slug: "gummy-tech",
+    slug: "gummy-technologies",
   },
   {
     name: "TM34",
