@@ -88,30 +88,30 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
     },
     slug: "super-t-transportation",
   },
-  {
-    name: "Alt Franchise",
-    media: {
-      type: "IMAGE",
-      image: altFranchise,
-    },
-    slug: "alt-franchise",
-  },
-  {
-    name: "Ana",
-    media: {
-      type: "IMAGE",
-      image: ana,
-    },
-    slug: "ana",
-  },
-  {
-    name: "Braggn Beauty",
-    media: {
-      type: "IMAGE",
-      image: braggnBeauty,
-    },
-    slug: "braggn-beauty",
-  },
+  // {
+  //   name: "Alt Franchise",
+  //   media: {
+  //     type: "IMAGE",
+  //     image: altFranchise,
+  //   },
+  //   slug: "alt-franchise",
+  // },
+  // {
+  //   name: "Ana",
+  //   media: {
+  //     type: "IMAGE",
+  //     image: ana,
+  //   },
+  //   slug: "ana",
+  // },
+  // {
+  //   name: "Braggn Beauty",
+  //   media: {
+  //     type: "IMAGE",
+  //     image: braggnBeauty,
+  //   },
+  //   slug: "braggn-beauty",
+  // },
   {
     name: "Grocery Gripps",
     media: {
@@ -120,20 +120,20 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
     },
     slug: "grocery-gripps",
   },
-  {
-    name: "Coretrust",
-    media: {
-      type: "IMAGE",
-      image: coretrust,
-    },
-    slug: "coretrust",
-  },
-  {
-    name: "Hudson Valley Farms",
-    media: {
-      type: "IMAGE",
-      image: hvf,
-    },
-    slug: "hudson-valley-farms",
-  },
+  // {
+  //   name: "Coretrust",
+  //   media: {
+  //     type: "IMAGE",
+  //     image: coretrust,
+  //   },
+  //   slug: "coretrust",
+  // },
+  // {
+  //   name: "Hudson Valley Farms",
+  //   media: {
+  //     type: "IMAGE",
+  //     image: hvf,
+  //   },
+  //   slug: "hudson-valley-farms",
+  // },
 ];
