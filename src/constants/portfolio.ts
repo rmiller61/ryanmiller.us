@@ -15,14 +15,6 @@ import { type Project } from "./projects";
 
 export const PORTFOLIO: Array<Project & { slug: string }> = [
   {
-    name: "Gummy Technologies",
-    media: {
-      type: "IMAGE",
-      image: gummyTech,
-    },
-    slug: "gummy-technologies",
-  },
-  {
     name: "TM34",
     media: {
       type: "IMAGE",
@@ -45,6 +37,14 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
       image: rocally,
     },
     slug: "rocally",
+  },
+  {
+    name: "Gummy Technologies",
+    media: {
+      type: "IMAGE",
+      image: gummyTech,
+    },
+    slug: "gummy-technologies",
   },
   {
     name: "Solar Energy Partners",
