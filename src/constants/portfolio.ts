@@ -15,15 +15,6 @@ import { type Project } from "./projects";
 
 export const PORTFOLIO: Array<Project & { slug: string }> = [
   {
-    name: "Air Locker Training",
-    media: {
-      type: "VIDEO",
-      video: "/projects/ALT.mp4",
-      poster: "/projects/alt-poster.jpg",
-    },
-    slug: "air-locker-training",
-  },
-  {
     name: "Gummy Technologies",
     media: {
       type: "IMAGE",
@@ -119,6 +110,15 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
       image: groceryGripps,
     },
     slug: "grocery-gripps",
+  },
+  {
+    name: "Air Locker Training",
+    media: {
+      type: "VIDEO",
+      video: "/projects/ALT.mp4",
+      poster: "/projects/alt-poster.jpg",
+    },
+    slug: "air-locker-training",
   },
   // {
   //   name: "Coretrust",
