@@ -5,7 +5,14 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="relative flex items-center bg-gradient-to-b from-dark to-black py-36 text-white">
+  <main class="relative flex flex-col bg-gradient-to-b from-dark to-black py-36 text-white">
+      <div class="mb-20 container space-y-5">
+        <a href="/" class="inline-flex gap-2 items-center">
+          <svg class="h-[1em] w-[1em]" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"></path></svg>
+          <span>Go Back</span>
+        </a>
+        <h2>Portfolio</h2>
+      </div>
       <div class="container grid sm:grid-cols-3 gap-10">
         {PORTFOLIO.map(({ name, media, slug }) => (
           <a class="block" href={`/portfolio/${slug}`}>
@@ -13,7 +20,7 @@ import Layout from "../layouts/Layout.astro";
               {media.type === "IMAGE" ? (
                 <img src={media.image} alt={name} />
               ) : (
-                <video src={media.video} poster={media.poster} muted autoplay loop />
+                <video src={media.video} poster={media.poster} muted autoplay loop playsinline />
               )}
             </div>
           </a>

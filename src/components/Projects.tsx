@@ -18,7 +18,14 @@ const Project = ({ name, media }: Project) => {
         {media.type === "IMAGE" ? (
           <img src={media.image} alt={name} />
         ) : (
-          <video src={media.video} poster={media.poster} muted autoPlay loop />
+          <video
+            src={media.video}
+            poster={media.poster}
+            muted
+            autoPlay
+            loop
+            playsInline
+          />
         )}
       </div>
     </div>
