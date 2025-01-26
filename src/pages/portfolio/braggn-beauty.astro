@@ -2,14 +2,15 @@
 import Footer from "../../components/Footer.astro";
 import Layout from "../../layouts/Layout.astro";
 import nextjs from "../../assets/nextjs.svg";
-import drizzle from "../../assets/drizzle.svg";
+import tailwind from "../../assets/tailwind.svg";
+import vercel from "../../assets/vercel.svg";
 import trpc from "../../assets/trpc.svg";
 import reactQuery from "../../assets/react-query.svg";
-import tailwind from "../../assets/tailwind.svg";
-import figma from "../../assets/figma.svg";
-import login from "../../assets/portfolio/alt-franchise/alt-login.jpg"
-import dashboard from "../../assets/portfolio/alt-franchise/alt-dashboard.jpg";
-import dashboardCalendar from "../../assets/portfolio/alt-franchise/alt-dashboard-calendar.jpg";
+import stripe from "../../assets/stripe.svg";
+import homepage from "../../assets/portfolio/braggn-beauty/homepage.png";
+import about from "../../assets/portfolio/braggn-beauty/about.png";
+import pricing from "../../assets/portfolio/braggn-beauty/pricing.png";
+import singleCourse from "../../assets/portfolio/braggn-beauty/single-course.png";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -19,9 +20,9 @@ import dashboardCalendar from "../../assets/portfolio/alt-franchise/alt-dashboar
         <svg class="h-[1em] w-[1em]" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"></path></svg>
         <span>Back to Portfolio</span>
       </a>
-      <h1>ALT Franchise HQ</h1>
+      <h1>Braggn Beauty</h1>
       <div class="space-y-10 mb-10 max-w-3xl">
-        <p class="text-2xl font-light">ALT is a fitness franchise. I built a Next.js backend UI for their franchise owners to upload documentation, share files, and undergo training. The app was multitenant and required complex permissions and multiple APIs managed via TRPC and React Query, with a PostgresSQL database run through Drizzle ORM.</p>
+        <p class="text-2xl font-light">Braggn Beauty is an online community and education repository for hair stylists. I built their LMS application using Next.js and TRPC, facillitating robust user management and an education API that allows users to keep track of their progress in each course. Subsequent to launching their app, Braggn Beauty has earned <strong><u>an average of $1.1 million/year in revenue</u></strong>.</p>
       </div>
       <ul class="flex gap-4 flex-wrap">
         <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
@@ -29,37 +30,35 @@ import dashboardCalendar from "../../assets/portfolio/alt-franchise/alt-dashboar
           <span>Next.js</span>
         </li>
         <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
-          <img src={drizzle.src} alt="Drizzle" class="w-6 h-auto" />
-          <span>Drizzle</span>
-        </li>
-        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
           <img src={trpc.src} alt="TRPC" class="w-6 h-auto" />
           <span>TRPC</span>
         </li>
         <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
-          <img src={reactQuery.src} alt="Tanstack Query" class="w-6 h-auto" />
-          <span>Tanstack Query</span>
+          <img src={reactQuery.src} alt="React Query" class="w-6 h-auto" />
+          <span>React Query</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={stripe.src} alt="Stripe" class="w-6 h-auto" />
+          <span>Stripe API</span>
         </li>
         <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
           <img src={tailwind.src} alt="Tailwind" class="w-6 h-auto" />
           <span>Tailwind</span>
         </li>
         <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
-          <img src={figma.src} alt="Figma" class="w-6 h-auto" />
-          <span>Figma</span>
+          <img src={vercel.src} alt="Vercel" class="w-6 h-auto" />
+          <span>Vercel</span>
         </li>
       </ul>
     </div>
     <div class="container grid sm:grid-cols-2 gap-10">
       <div class="space-y-10 flex flex-col">
-        <img src={dashboard.src} alt="ALT Franchise HQ Dashboard" class="w-full h-auto rounded-lg" />
-        <img src={dashboardCalendar.src} alt="ALT Franchise HQ Dashboard" class="w-full h-auto rounded-lg" />
-        <video src={`/portfolio/alt-files.mp4`} muted autoplay loop playsinline />
+        <img src={homepage.src} alt="Braggn Beauty" class="w-full h-auto rounded-lg" />
       </div>
       <div class="space-y-10 flex flex-col sm:mt-[25%]">
-        <img src={login.src} alt="ALT Franchise HQ Dashboard" class="w-full h-auto rounded-lg" />
-        <video src={`/portfolio/alt-compliance.mp4`} muted autoplay loop playsinline />
-        <video src={`/portfolio/alt-admin-course.mp4`} muted autoplay loop playsinline />
+        <img src={singleCourse.src} alt="Braggn Beauty" class="w-full h-auto rounded-lg" />
+        <img src={pricing.src} alt="Braggn Beauty" class="w-full h-auto rounded-lg" />
+        <img src={about.src} alt="Braggn Beauty" class="w-full h-auto rounded-lg" />
       </div>
     </div>
   </main>

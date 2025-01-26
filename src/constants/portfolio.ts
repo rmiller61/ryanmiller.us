@@ -95,14 +95,14 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
     },
     slug: "ana",
   },
-  // {
-  //   name: "Braggn Beauty",
-  //   media: {
-  //     type: "IMAGE",
-  //     image: braggnBeauty,
-  //   },
-  //   slug: "braggn-beauty",
-  // },
+  {
+    name: "Braggn Beauty",
+    media: {
+      type: "IMAGE",
+      image: braggnBeauty,
+    },
+    slug: "braggn-beauty",
+  },
   {
     name: "Grocery Gripps",
     media: {
