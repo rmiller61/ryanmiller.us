@@ -23,12 +23,12 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
     slug: "tm34-marketing",
   },
   {
-    name: "Heath Treasure",
+    name: "Coretrust",
     media: {
       type: "IMAGE",
-      image: heath,
+      image: coretrust,
     },
-    slug: "heath-treasure",
+    slug: "coretrust",
   },
   {
     name: "Rocally",
@@ -39,12 +39,20 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
     slug: "rocally",
   },
   {
-    name: "Gummy Technologies",
+    name: "Heath Treasure",
     media: {
       type: "IMAGE",
-      image: gummyTech,
+      image: heath,
     },
-    slug: "gummy-technologies",
+    slug: "heath-treasure",
+  },
+  {
+    name: "Stay Awhile Villas",
+    media: {
+      type: "IMAGE",
+      image: stayAwhile,
+    },
+    slug: "stay-awhile-villas",
   },
   {
     name: "Solar Energy Partners",
@@ -63,14 +71,6 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
     slug: "social-hustle",
   },
   {
-    name: "Stay Awhile Villas",
-    media: {
-      type: "IMAGE",
-      image: stayAwhile,
-    },
-    slug: "stay-awhile-villas",
-  },
-  {
     name: "Super T Transportation",
     media: {
       type: "VIDEO",
@@ -78,6 +78,14 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
       poster: "/projects/super-t-poster.jpg",
     },
     slug: "super-t-transportation",
+  },
+  {
+    name: "Gummy Technologies",
+    media: {
+      type: "IMAGE",
+      image: gummyTech,
+    },
+    slug: "gummy-technologies",
   },
   {
     name: "Alt Franchise",
@@ -119,14 +127,6 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
       poster: "/projects/alt-poster.jpg",
     },
     slug: "air-locker-training",
-  },
-  {
-    name: "Coretrust",
-    media: {
-      type: "IMAGE",
-      image: coretrust,
-    },
-    slug: "coretrust",
   },
   {
     name: "Hudson Valley Farms",
