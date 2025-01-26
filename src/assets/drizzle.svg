@@ -1,0 +1,10 @@
+<svg viewBox="0 0 62 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, -0.000000)" fill="#000000" fill-rule="nonzero">
+            <rect transform="translate(7.796529, 22.310824) rotate(29.662631) translate(-7.796529, -22.310824) " x="5.16970454" y="11.1691249" width="5.25364978" height="22.2833984" rx="2.62682489"></rect>
+            <rect transform="translate(26.047529, 10.981624) rotate(29.662631) translate(-26.047529, -10.981624) " x="23.4207045" y="-0.160075144" width="5.25364978" height="22.2833984" rx="2.62682489"></rect>
+            <rect transform="translate(54.130529, 10.982124) rotate(29.662631) translate(-54.130529, -10.982124) " x="51.5037045" y="-0.159575144" width="5.25364978" height="22.2833984" rx="2.62682489"></rect>
+            <rect transform="translate(35.873629, 22.310824) rotate(29.662631) translate(-35.873629, -22.310824) " x="33.2468045" y="11.1691249" width="5.25364978" height="22.2833984" rx="2.62682489"></rect>
+        </g>
+    </g>
+</svg>

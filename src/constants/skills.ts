@@ -97,6 +97,7 @@ import webpack from "../assets/webpack.svg";
 import wordpress from "../assets/wordpress.svg";
 import wpEngine from "../assets/wp-engine.svg";
 import zeplin from "../assets/zeplin.svg";
+import drizzle from "../assets/drizzle.svg";
 
 export type SingleTile = {
   name: string;
@@ -387,6 +388,10 @@ export const SKILLS: Skills = {
     {
       name: "Prisma ORM",
       image: prisma,
+    },
+    {
+      name: "Drizzle",
+      image: drizzle,
     },
   ],
   devops: [
