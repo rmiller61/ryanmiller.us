@@ -12,7 +12,6 @@ import codedeploy from "../assets/aws-codedeploy.svg";
 import dynamoDb from "../assets/aws-dynamodb.svg";
 import ec2 from "../assets/aws-ec2.svg";
 import ecs from "../assets/aws-ecs.svg";
-import elb from "../assets/aws-elb.svg";
 import lambda from "../assets/aws-lambda.svg";
 import route53 from "../assets/aws-route53.svg";
 import s3 from "../assets/aws-s3.svg";
@@ -98,6 +97,7 @@ import wordpress from "../assets/wordpress.svg";
 import wpEngine from "../assets/wp-engine.svg";
 import zeplin from "../assets/zeplin.svg";
 import drizzle from "../assets/drizzle.svg";
+import supabase from "../assets/supabase.svg";
 
 export type SingleTile = {
   name: string;
@@ -392,6 +392,10 @@ export const SKILLS: Skills = {
     {
       name: "Drizzle",
       image: drizzle,
+    },
+    {
+      name: "Supabase",
+      image: supabase,
     },
   ],
   devops: [
