@@ -29,7 +29,6 @@ import docker from "../assets/docker.svg";
 import dotcms from "../assets/dotcms.svg";
 import electron from "../assets/electron.svg";
 import eslint from "../assets/eslint.svg";
-import facebook from "../assets/facebook.svg";
 import fastify from "../assets/fastify.svg";
 import figma from "../assets/figma.svg";
 import framer from "../assets/framer.svg";
@@ -37,14 +36,11 @@ import gatsby from "../assets/gatsby.svg";
 import git from "../assets/git.svg";
 import githubActions from "../assets/github-actions.svg";
 import githubCopilot from "../assets/github-copilot.svg";
-import github from "../assets/github.svg";
-import google from "../assets/google.svg";
 import graphql from "../assets/graphql.svg";
 import gsap from "../assets/gsap.svg";
 import heroku from "../assets/heroku.svg";
 import hubspot from "../assets/hubspot.svg";
 import hydrogen from "../assets/hydrogen.svg";
-import instagram from "../assets/instagram.svg";
 import javascript from "../assets/javascript.svg";
 import jest from "../assets/jest.svg";
 import jira from "../assets/jira.svg";
@@ -98,6 +94,13 @@ import wpEngine from "../assets/wp-engine.svg";
 import zeplin from "../assets/zeplin.svg";
 import drizzle from "../assets/drizzle.svg";
 import supabase from "../assets/supabase.svg";
+import nx from "../assets/nx.svg";
+import logrocket from "../assets/logrocket.svg";
+import datadog from "../assets/datadog.svg";
+import clerk from "../assets/clerk.svg";
+import resend from "../assets/resend.svg";
+import sendGrid from "../assets/sendgrid.svg";
+import sentry from "../assets/sentry.svg";
 
 export type SingleTile = {
   name: string;
@@ -146,6 +149,14 @@ export const SKILLS: Skills = {
     {
       name: "Mailgun",
       image: mailgun,
+    },
+    {
+      name: "Resend",
+      image: resend,
+    },
+    {
+      name: "SendGrid",
+      image: sendGrid,
     },
   ],
   libs: [
@@ -393,10 +404,6 @@ export const SKILLS: Skills = {
       name: "Drizzle",
       image: drizzle,
     },
-    {
-      name: "Supabase",
-      image: supabase,
-    },
   ],
   devops: [
     {
@@ -410,6 +417,18 @@ export const SKILLS: Skills = {
     {
       name: "Git",
       image: git,
+    },
+    {
+      name: "LogRocket",
+      image: logrocket,
+    },
+    {
+      name: "Datadog",
+      image: datadog,
+    },
+    {
+      name: "Sentry",
+      image: sentry,
     },
   ],
   aws: [
@@ -489,6 +508,10 @@ export const SKILLS: Skills = {
       name: "Webpack",
       image: webpack,
     },
+    {
+      name: "Nx",
+      image: nx,
+    },
   ],
   animation: [
     {
@@ -504,22 +527,14 @@ export const SKILLS: Skills = {
       image: threejs,
     },
   ],
-  social: [
+  baas: [
     {
-      name: "Facebook",
-      image: facebook,
+      name: "Supabase",
+      image: supabase,
     },
     {
-      name: "Instagram",
-      image: instagram,
-    },
-    {
-      name: "Google",
-      image: google,
-    },
-    {
-      name: "Github",
-      image: github,
+      name: "Clerk",
+      image: clerk,
     },
   ],
   hosting: [
