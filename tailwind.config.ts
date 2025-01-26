@@ -137,22 +137,58 @@ export default {
           fontFamily: theme("fontFamily.sans"),
         },
         h1: {
-          fontSize: theme("fontSize.h1"),
+          fontSize: theme("fontSize.h3"),
+          "@screen sm": {
+            fontSize: theme("fontSize.h2"),
+          },
+          "@screen lg": {
+            fontSize: theme("fontSize.h1"),
+          },
         },
         h2: {
-          fontSize: theme("fontSize.h2"),
+          fontSize: theme("fontSize.h4"),
+          "@screen sm": {
+            fontSize: theme("fontSize.h3"),
+          },
+          "@screen lg": {
+            fontSize: theme("fontSize.h2"),
+          },
         },
         h3: {
-          fontSize: theme("fontSize.h3"),
+          fontSize: theme("fontSize.h5"),
+          "@screen sm": {
+            fontSize: theme("fontSize.h4"),
+          },
+          "@screen lg": {
+            fontSize: theme("fontSize.h3"),
+          },
         },
         h4: {
-          fontSize: theme("fontSize.h4"),
+          fontSize: theme("fontSize.h6"),
+          "@screen sm": {
+            fontSize: theme("fontSize.h5"),
+          },
+          "@screen lg": {
+            fontSize: theme("fontSize.h4"),
+          },
         },
         h5: {
-          fontSize: theme("fontSize.h5"),
+          fontSize: "0.875rem",
+          "@screen sm": {
+            fontSize: theme("fontSize.h6"),
+          },
+          "@screen lg": {
+            fontSize: theme("fontSize.h5"),
+          },
         },
         h6: {
-          fontSize: theme("fontSize.h6"),
+          fontSize: "0.75rem",
+          "@screen sm": {
+            fontSize: "0.875rem",
+          },
+          "@screen lg": {
+            fontSize: theme("fontSize.h6"),
+          },
         },
       });
 
