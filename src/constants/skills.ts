@@ -101,6 +101,7 @@ import clerk from "../assets/clerk.svg";
 import resend from "../assets/resend.svg";
 import sendGrid from "../assets/sendgrid.svg";
 import sentry from "../assets/sentry.svg";
+import storyblok from "../assets/storyblok.svg";
 
 export type SingleTile = {
   name: string;
@@ -263,6 +264,10 @@ export const SKILLS: Skills = {
     {
       name: "Builder.io",
       image: builderio,
+    },
+    {
+      name: "Storyblok",
+      image: storyblok,
     },
   ],
   metaframeworks: [
