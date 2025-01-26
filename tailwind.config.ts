@@ -135,6 +135,7 @@ export default {
         },
         "html, body": {
           fontFamily: theme("fontFamily.sans"),
+          wordWrap: "break-word",
         },
         h1: {
           fontSize: theme("fontSize.h3"),
