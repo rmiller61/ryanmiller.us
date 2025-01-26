@@ -87,14 +87,14 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
     },
     slug: "alt-franchise",
   },
-  // {
-  //   name: "Ana",
-  //   media: {
-  //     type: "IMAGE",
-  //     image: ana,
-  //   },
-  //   slug: "ana",
-  // },
+  {
+    name: "Ana",
+    media: {
+      type: "IMAGE",
+      image: ana,
+    },
+    slug: "ana",
+  },
   // {
   //   name: "Braggn Beauty",
   //   media: {

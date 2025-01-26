@@ -1,0 +1,51 @@
+---
+import Footer from "../../components/Footer.astro";
+import Layout from "../../layouts/Layout.astro";
+import nextjs from "../../assets/nextjs.svg";
+import supabase from "../../assets/supabase.svg";
+import tailwind from "../../assets/tailwind.svg";
+import content from "../../assets/portfolio/ana/content.jpg"
+import dashboard from "../../assets/portfolio/ana/dashboard.jpg";
+import homepage from "../../assets/portfolio/ana/homepage.jpg";
+import login from "../../assets/portfolio/ana/login.jpg";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="relative flex flex-col bg-gradient-to-b from-dark to-black py-36 text-white">
+     <div class="container mb-20">
+      <div class="space-y-10 mb-10 max-w-3xl">
+        <a href="/portfolio" class="inline-flex gap-2 items-center">
+          <svg class="h-[1em] w-[1em]" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"></path></svg>
+          <span>Back to Portfolio</span>
+        </a>
+        <h1>ANA Content Hub</h1>
+        <p class="text-2xl font-light">ANA is an American B2B marketing association who sought a members-only repository for their conference recordings. I built them a Next.js application with a Supabase API/backend for user managemenet & database use.</p>
+      </div>
+      <ul class="flex gap-4 flex-wrap">
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={nextjs.src} alt="NextJS" class="w-6 h-auto" />
+          <span>Next.js</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={supabase.src} alt="Supabase" class="w-6 h-auto" />
+          <span>Supabase</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={tailwind.src} alt="Tailwind" class="w-6 h-auto" />
+          <span>Tailwind</span>
+        </li>
+      </ul>
+    </div>
+    <div class="container grid sm:grid-cols-2 gap-10">
+      <div class="space-y-10 flex flex-col">
+        <img src={homepage.src} alt="ANA" class="w-full h-auto rounded-lg" />
+        <img src={login.src} alt="ANA" class="w-full h-auto rounded-lg" />
+      </div>
+      <div class="space-y-10 flex flex-col mt-[25%]">
+        <img src={dashboard.src} alt="ANA" class="w-full h-auto rounded-lg" />
+        <img src={content.src} alt="ANA" class="w-full h-auto rounded-lg" />
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>
