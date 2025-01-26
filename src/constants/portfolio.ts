@@ -79,14 +79,14 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
     },
     slug: "super-t-transportation",
   },
-  // {
-  //   name: "Alt Franchise",
-  //   media: {
-  //     type: "IMAGE",
-  //     image: altFranchise,
-  //   },
-  //   slug: "alt-franchise",
-  // },
+  {
+    name: "Alt Franchise",
+    media: {
+      type: "IMAGE",
+      image: altFranchise,
+    },
+    slug: "alt-franchise",
+  },
   // {
   //   name: "Ana",
   //   media: {
