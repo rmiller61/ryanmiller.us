@@ -1,0 +1,70 @@
+---
+import Footer from "../../components/Footer.astro";
+import Layout from "../../layouts/Layout.astro";
+import nextjs from "../../assets/nextjs.svg";
+import nx from "../../assets/nx.svg";
+import datadog from "../../assets/datadog.svg";
+import sendGrid from "../../assets/sendgrid.svg";
+import cypress from "../../assets/cypress.svg";
+import storyblok from "../../assets/storyblok.svg";
+import login from "../../assets/portfolio/coretrust/login.jpg";
+import insights from "../../assets/portfolio/coretrust/insights.jpg";
+import opportunityAnalysis from "../../assets/portfolio/coretrust/opportunity-analysis.jpg";
+import spendCategorization from "../../assets/portfolio/coretrust/spend-categorization.jpg";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="relative flex flex-col bg-gradient-to-b from-dark to-black py-36 text-white">
+     <div class="container mb-20">
+      <a href="/portfolio" class="inline-flex gap-2 items-center">
+        <svg class="h-[1em] w-[1em]" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"></path></svg>
+        <span>Back to Portfolio</span>
+      </a>
+      <h1>CoreTrust</h1>
+      <div class="space-y-10 mb-10 max-w-3xl">
+        <p class="text-2xl font-light">As a software engineer on CoreTrust's team, I developed UI features for their B2B platform, a Next.js app within an NX monorepo. While there, I helped reduce technical debt by 25% and eliminated up to 75% of component re-renders in parts of the app.</p>
+        <a class="inline-flex items-center gap-5 hover:bg-white hover:text-dark ease-in-out duration-500 transition-all px-8 py-3 text-sm border border-white rounded-full" href="https://cxp.coretrustpg.com" target="_blank">
+          <span>View Website</span>
+          <svg class="h-[1em] w-[1em]" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg>
+        </a>
+      </div>
+      <ul class="flex gap-4 flex-wrap">
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={nextjs.src} alt="NextJS" class="w-6 h-auto" />
+          <span>Next.js</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={nx.src} alt="NX" class="w-6 h-auto" />
+          <span>NX</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={datadog.src} alt="Datadog" class="w-6 h-auto" />
+          <span>Datadog</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={sendGrid.src} alt="SendGrid" class="w-6 h-auto" />
+          <span>SendGrid</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={cypress.src} alt="Cypress" class="w-6 h-auto" />
+          <span>Cypress</span>
+        </li>
+        <li class="flex items-center space-x-2 py-2 px-4 bg-white text-dark rounded-xl text-sm">
+          <img src={storyblok.src} alt="Storyblok" class="w-6 h-auto" />
+          <span>Storyblok</span>
+        </li>
+      </ul>
+    </div>
+    <div class="container grid sm:grid-cols-2 gap-10">
+      <div class="space-y-10 flex flex-col">
+        <img src={login.src} alt="Coretrust" class="w-full h-auto rounded-lg" />
+        <img src={opportunityAnalysis.src} alt="Coretrust" class="w-full h-auto rounded-lg" />
+      </div>
+      <div class="space-y-10 flex flex-col sm:mt-[25%]">
+        <img src={insights.src} alt="Coretrust" class="w-full h-auto rounded-lg" />
+        <img src={spendCategorization.src} alt="Coretrust" class="w-full h-auto rounded-lg" />
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>

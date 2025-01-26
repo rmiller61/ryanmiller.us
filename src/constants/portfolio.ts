@@ -120,20 +120,20 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
     },
     slug: "air-locker-training",
   },
-  // {
-  //   name: "Coretrust",
-  //   media: {
-  //     type: "IMAGE",
-  //     image: coretrust,
-  //   },
-  //   slug: "coretrust",
-  // },
-  // {
-  //   name: "Hudson Valley Farms",
-  //   media: {
-  //     type: "IMAGE",
-  //     image: hvf,
-  //   },
-  //   slug: "hudson-valley-farms",
-  // },
+  {
+    name: "Coretrust",
+    media: {
+      type: "IMAGE",
+      image: coretrust,
+    },
+    slug: "coretrust",
+  },
+  {
+    name: "Hudson Valley Farms",
+    media: {
+      type: "IMAGE",
+      image: hvf,
+    },
+    slug: "hudson-valley-farms",
+  },
 ];
