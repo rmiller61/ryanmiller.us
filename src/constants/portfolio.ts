@@ -71,13 +71,13 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
     slug: "social-hustle",
   },
   {
-    name: "Super T Transportation",
+    name: "Air Locker Training",
     media: {
       type: "VIDEO",
-      video: "/projects/super-t.mp4",
-      poster: "/projects/super-t-poster.jpg",
+      video: "/projects/ALT.mp4",
+      poster: "/projects/alt-poster.jpg",
     },
-    slug: "super-t-transportation",
+    slug: "air-locker-training",
   },
   {
     name: "Gummy Technologies",
@@ -112,21 +112,21 @@ export const PORTFOLIO: Array<Project & { slug: string }> = [
     slug: "braggn-beauty",
   },
   {
+    name: "Super T Transportation",
+    media: {
+      type: "VIDEO",
+      video: "/projects/super-t.mp4",
+      poster: "/projects/super-t-poster.jpg",
+    },
+    slug: "super-t-transportation",
+  },
+  {
     name: "Grocery Gripps",
     media: {
       type: "IMAGE",
       image: groceryGripps,
     },
     slug: "grocery-gripps",
-  },
-  {
-    name: "Air Locker Training",
-    media: {
-      type: "VIDEO",
-      video: "/projects/ALT.mp4",
-      poster: "/projects/alt-poster.jpg",
-    },
-    slug: "air-locker-training",
   },
   {
     name: "Hudson Valley Farms",
