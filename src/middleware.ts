@@ -3,6 +3,7 @@ import { defineMiddleware } from "astro:middleware";
 // `context` and `next` are automatically typed
 export const onRequest = defineMiddleware((context, next) => {
   const url = new URL(context.request.url);
+  console.log(url.toJSON());
   if (url.hostname.includes("portfolio.")) {
     const newUrl = new URL(`https://ryanmiller.co${url.pathname}`);
     return context.rewrite(
